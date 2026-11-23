@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 161 170"
+  width="161" height="170"
+  role="img" aria-hidden="true">
+  <style>
+    .piece {
+      fill: #490f16;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    
+        .main {
+          animation: wiggle 3.4s ease-in-out infinite;
+        }
+        .dot {
+          animation: twinkle 2.15s ease-in-out infinite;
+        }
+        .p2 { animation-delay: .15s; }
+        .p3 { animation-delay: .4s; }
+        .p4 { animation-delay: .7s; }
+        .p5 { animation-delay: .95s; }
+        .p6 { animation-delay: 1.2s; }
+
+        @keyframes wiggle {
+          0%,100% { transform: rotate(-1deg) scale(1); }
+          50% { transform: rotate(2.5deg) scale(1.035); }
+        }
+
+        @keyframes twinkle {
+          0%,100% { transform: scale(.72) rotate(-6deg); opacity: .3; }
+          50% { transform: scale(1.18) rotate(7deg); opacity: 1; }
+        }
+        
+    @media (prefers-reduced-motion: reduce) {
+      .piece { animation: none !important; }
+    }
+  </style>
+  <path class="piece main p1" d="M 90.0 18.0 L 87.0 52.0 L 82.0 69.0 L 79.0 68.0 L 59.0 43.0 L 52.0 48.0 L 73.0 75.0 L 74.0 80.0 L 19.0 70.0 L 18.0 79.0 L 60.0 86.0 L 69.0 90.0 L 43.0 113.0 L 48.0 121.0 L 72.0 101.0 L 78.0 100.0 L 76.0 126.0 L 69.0 152.0 L 79.0 154.0 L 85.0 129.0 L 88.0 101.0 L 113.0 129.0 L 119.0 122.0 L 98.0 97.0 L 99.0 94.0 L 152.0 99.0 L 153.0 90.0 L 97.0 84.0 L 129.0 60.0 L 124.0 53.0 L 95.0 73.0 L 91.0 73.0 L 96.0 56.0 L 99.0 19.0 Z" fill-rule="evenodd"/>
+</svg>

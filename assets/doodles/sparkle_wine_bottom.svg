@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 215"
+  width="200" height="215"
+  role="img" aria-hidden="true">
+  <style>
+    .piece {
+      fill: #490f16;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    
+        .main {
+          animation: pulse 2.8s ease-in-out infinite;
+        }
+        .dot {
+          animation: twinkle 2.2s ease-in-out infinite;
+        }
+        .p2 { animation-delay: .2s; }
+        .p3 { animation-delay: .55s; }
+        .p4 { animation-delay: .85s; }
+        .p5 { animation-delay: 1.1s; }
+
+        @keyframes pulse {
+          0%,100% { transform: scale(1) rotate(0deg); opacity: .92; }
+          50% { transform: scale(1.07) rotate(2deg); opacity: 1; }
+        }
+
+        @keyframes twinkle {
+          0%,100% { transform: scale(.78); opacity: .35; }
+          50% { transform: scale(1.18); opacity: 1; }
+        }
+        
+    @media (prefers-reduced-motion: reduce) {
+      .piece { animation: none !important; }
+    }
+  </style>
+  <path class="piece main p1" d="M 103.0 15.0 L 98.0 17.0 L 96.0 20.0 L 96.0 66.0 L 93.0 77.0 L 87.0 88.0 L 78.0 97.0 L 67.0 102.0 L 27.0 106.0 L 23.0 109.0 L 23.0 112.0 L 41.0 117.0 L 67.0 119.0 L 74.0 122.0 L 81.0 128.0 L 86.0 137.0 L 90.0 151.0 L 95.0 181.0 L 96.0 200.0 L 99.0 205.0 L 103.0 205.0 L 105.0 203.0 L 108.0 171.0 L 113.0 148.0 L 119.0 133.0 L 126.0 126.0 L 136.0 121.0 L 151.0 117.0 L 170.0 115.0 L 175.0 112.0 L 175.0 109.0 L 172.0 106.0 L 158.0 105.0 L 132.0 98.0 L 123.0 93.0 L 115.0 85.0 L 110.0 75.0 L 107.0 63.0 L 105.0 18.0 Z M 100.0 68.0 L 101.0 68.0 L 103.0 70.0 L 103.0 73.0 L 104.0 74.0 L 105.0 80.0 L 107.0 83.0 L 107.0 85.0 L 109.0 89.0 L 111.0 91.0 L 113.0 95.0 L 122.0 103.0 L 132.0 108.0 L 135.0 108.0 L 136.0 109.0 L 141.0 109.0 L 142.0 110.0 L 141.0 112.0 L 134.0 113.0 L 123.0 118.0 L 116.0 125.0 L 112.0 132.0 L 112.0 134.0 L 111.0 135.0 L 111.0 137.0 L 109.0 141.0 L 108.0 149.0 L 107.0 150.0 L 107.0 154.0 L 106.0 155.0 L 106.0 159.0 L 105.0 160.0 L 105.0 163.0 L 104.0 164.0 L 104.0 167.0 L 103.0 168.0 L 101.0 167.0 L 101.0 164.0 L 100.0 163.0 L 100.0 160.0 L 99.0 159.0 L 99.0 155.0 L 98.0 154.0 L 98.0 151.0 L 97.0 150.0 L 96.0 143.0 L 95.0 142.0 L 95.0 140.0 L 94.0 139.0 L 94.0 137.0 L 93.0 136.0 L 93.0 134.0 L 91.0 130.0 L 89.0 128.0 L 87.0 124.0 L 81.0 118.0 L 69.0 112.0 L 70.0 110.0 L 77.0 108.0 L 87.0 100.0 L 95.0 86.0 L 95.0 84.0 L 96.0 83.0 L 96.0 81.0 L 98.0 77.0 L 98.0 74.0 L 99.0 73.0 L 99.0 69.0 Z" fill-rule="evenodd"/>
+</svg>

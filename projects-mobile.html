@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6e9d6">
+
+  <title>Projects — Coming Soon | Jenna Tonido</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="projects-mobile.css">
+  <script src="projects-mobile.js" defer></script>
+</head>
+
+<body>
+
+  <!-- FLOATING NAV -->
+  <header class="pm-nav">
+    <a href="mobile.html" class="pm-logo" aria-label="Back to home">
+      <img src="assets/jennalogo.png" alt="Jenna logo">
+    </a>
+
+    <button
+      class="pm-burger"
+      id="pmBurger"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="pmMenu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- BURGER MENU -->
+  <div class="pm-menu-overlay" id="pmMenu" aria-hidden="true">
+    <div class="pm-menu-card">
+      <div class="pm-menu-top">
+        <p>where to?</p>
+        <span>EXPLORE</span>
+      </div>
+
+      <nav class="pm-menu-links" aria-label="Main navigation">
+        <a href="mobile.html">
+          <small>01</small>
+          <strong>Home</strong>
+          <span>↗</span>
+        </a>
+
+        <a href="projects-mobile.html">
+          <small>02</small>
+          <strong>Projects</strong>
+          <span>↗</span>
+        </a>
+
+        <a href="mobile.html#kind-words">
+          <small>03</small>
+          <strong>Kind Words</strong>
+          <span>↗</span>
+        </a>
+      </nav>
+
+      <p class="pm-menu-note">take a little look around ♡</p>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE -->
+  <main class="pm-page">
+
+    <!-- AMBIENT EFFECTS -->
+    <div class="pm-background" aria-hidden="true">
+      <div class="pm-glow pm-glow-one"></div>
+      <div class="pm-glow pm-glow-two"></div>
+      <div class="pm-orbit pm-orbit-one"></div>
+      <div class="pm-orbit pm-orbit-two"></div>
+    </div>
+
+    <!-- DECORATIVE CURVED LINES -->
+    <svg
+      class="pm-curves"
+      viewBox="0 0 390 850"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path
+        class="pm-curve pm-curve-one"
+        d="M-65 380 C30 235, 170 290, 115 440 S-20 610, 100 650"
+      />
+      <path
+        class="pm-curve pm-curve-two"
+        d="M420 460 C290 330, 280 570, 380 665 S420 760, 290 810"
+      />
+    </svg>
+
+    <!-- FLOATING SPARKLES -->
+    <span class="pm-spark pm-spark-one" aria-hidden="true">✧</span>
+    <span class="pm-spark pm-spark-two" aria-hidden="true">✦</span>
+    <span class="pm-spark pm-spark-three" aria-hidden="true">✧</span>
+
+    <!-- CONTENT -->
+    <div class="pm-content">
+
+      <!-- HANDWRITTEN TITLE -->
+      <div class="pm-script-title pm-reveal pm-delay-1">
+        <span>projects</span>
+        <svg viewBox="0 0 300 40" aria-hidden="true">
+          <path d="M7 31 C95 10, 198 22, 292 10"></path>
+        </svg>
+      </div>
+
+      <!-- COMING SOON -->
+      <div class="pm-main-title pm-reveal pm-delay-2">
+        <h1>
+          <span>coming</span>
+          <span>soon</span>
+        </h1>
+
+        <div class="pm-burst" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </div>
+      </div>
+
+      <!-- SUBTITLE -->
+      <p class="pm-subtitle pm-reveal pm-delay-3">
+        i'm still putting the finishing<br>
+        touches on this space ♡
+      </p>
+
+      <!-- FOLDER CARD -->
+      <div class="pm-folder-wrap pm-reveal pm-delay-4">
+        <div class="pm-folder-card" id="pmFolderCard">
+
+          <div class="pm-tape" aria-hidden="true"></div>
+
+          <div class="pm-folder-icon" aria-hidden="true">
+            <svg viewBox="0 0 180 150" fill="none">
+              <path
+                class="pm-folder-back"
+                d="M24 42 V30 Q24 20 34 20 H68 L84 38 H145 Q156 38 156 49 V115 Q156 125 146 125 H34 Q24 125 24 115 Z"
+              />
+              <path
+                class="pm-folder-paper"
+                d="M46 30 H123 V96 H46 Z"
+              />
+              <path
+                class="pm-folder-front"
+                d="M24 63 Q24 52 35 52 H149 Q161 52 158 65 L145 124 H36 Q27 124 24 113 Z"
+              />
+              <path
+                class="pm-folder-heart"
+                d="M90 98 C70 85 75 69 87 77 L90 81 L94 77 C107 67 114 85 90 98Z"
+              />
+            </svg>
+            <span class="pm-folder-spark">✧</span>
+          </div>
+
+          <h2>a collection of my work<br>will be here soon!</h2>
+
+          <p>
+            designs, content, campaigns,<br>
+            and more — all in one place.
+          </p>
+        </div>
+      </div>
+
+      <!-- BACK BUTTON -->
+      <div class="pm-back-wrap pm-reveal pm-delay-5">
+        <a href="mobile.html" class="pm-back">
+          <span class="pm-back-arrow">←</span>
+          <span>back to home</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM HEART LINE -->
+    <svg
+      class="pm-heart-line"
+      viewBox="0 0 390 140"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M-20 135 C80 65, 165 110, 236 77
+        C248 71, 250 42, 268 52
+        C285 64, 270 85, 266 89
+        C254 75, 250 60, 262 52
+        C283 43, 294 70, 266 89
+        C330 105, 360 35, 410 15"
+      />
+    </svg>
+
+  </main>
+
+</body>
+</html>

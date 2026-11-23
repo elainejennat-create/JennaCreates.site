@@ -1,0 +1,2745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Switch between the dedicated desktop and mobile pages. -->
+  <script>
+    (() => {
+      const viewQuery = window.matchMedia("(max-width: 767px)");
+      let navigating = false;
+
+      function switchView() {
+        if (!viewQuery.matches || navigating) return;
+        navigating = true;
+        const destination = new URL("mobile.html", window.location.href);
+        destination.search = window.location.search;
+        destination.hash = window.location.hash;
+        if (destination.href !== window.location.href) {
+          window.location.replace(destination.href);
+        } else {
+          navigating = false;
+        }
+      }
+
+      switchView();
+      viewQuery.addEventListener("change", switchView);
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Jenna Tonido — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- DESKTOP FLOATING NAVIGATION -->
+<header class="desktop-nav">
+  <button
+    class="desktop-burger"
+    id="desktopBurger"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="desktopMenu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<!-- DESKTOP MENU OVERLAY -->
+<div
+  class="desktop-menu-overlay"
+  id="desktopMenu"
+  aria-hidden="true"
+>
+  <div class="desktop-menu-card">
+
+    <div class="desktop-menu-top">
+      <p class="desktop-menu-script">where to?</p>
+      <span class="desktop-menu-small">explore</span>
+    </div>
+
+    <nav class="desktop-menu-links" aria-label="Main navigation">
+
+      <a href="projects.html" class="desktop-menu-link">
+        <span class="desktop-menu-number">01</span>
+        <span class="desktop-menu-title">Projects</span>
+        <span class="desktop-menu-arrow">↗</span>
+      </a>
+
+      <a href="#kind-words" class="desktop-menu-link">
+        <span class="desktop-menu-number">02</span>
+        <span class="desktop-menu-title">Kind Words</span>
+        <span class="desktop-menu-arrow">↓</span>
+      </a>
+
+    </nav>
+
+    <p class="desktop-menu-note">
+      take a little look around ♡
+    </p>
+
+  </div>
+</div>
+
+
+<main>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <section class="hero">
+
+    <div class="hero-glow"></div>
+
+    <p class="hero-note hero-note-left">
+      hi, since you’re new here...
+    </p>
+
+    <p class="hero-note hero-note-right">
+      let me be your tour guide.
+    </p>
+
+    <p class="this-is">
+      this is
+    </p>
+
+    <div class="hero-name">
+
+      <h1 class="name name-jenna">
+        JENNA
+      </h1>
+
+      <h1 class="name name-tonido">
+        TONIDO
+      </h1>
+
+    </div>
+
+    <img
+      src="assets/jennat.png"
+      alt="Jenna Tonido"
+      class="jenna-image"
+    >
+
+    <img
+      src="assets/doodles/burst_wine_left.svg"
+      alt=""
+      aria-hidden="true"
+      class="decor-doodle hero-doodle hero-doodle-left"
+    >
+
+    <img
+      src="assets/doodles/sparkle_wine_top.svg"
+      alt=""
+      aria-hidden="true"
+      class="decor-doodle hero-doodle hero-doodle-top"
+    >
+
+    <img
+      src="assets/doodles/sparkle_wine_bottom.svg"
+      alt=""
+      aria-hidden="true"
+      class="decor-doodle hero-doodle hero-doodle-bottom"
+    >
+
+    <div class="bottom-info bottom-left">
+
+      <span>
+        Graphic Designer
+      </span>
+
+      <span class="slash">
+        /
+      </span>
+
+      <span>
+        Creative
+      </span>
+
+    </div>
+
+    <div class="bottom-info bottom-right">
+      By Jenna Tonido
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       MEET JENNA
+  ====================================================== -->
+
+  <section class="about">
+
+    <div class="about-ambient" aria-hidden="true">
+
+      <span class="about-orbit orbit-one"></span>
+      <span class="about-orbit orbit-two"></span>
+      <span class="about-orbit orbit-three"></span>
+
+      <span class="about-glow glow-one"></span>
+      <span class="about-glow glow-two"></span>
+
+      <span class="about-strip strip-one"></span>
+      <span class="about-strip strip-two"></span>
+      <span class="about-strip strip-three"></span>
+
+      <span class="about-divider"></span>
+
+      <span class="about-badge about-badge-main">
+        creative + strategic
+      </span>
+
+      <span class="about-badge about-badge-small">
+        content / systems / design
+      </span>
+
+      <span class="about-glass-card">
+
+        <em>
+          multi-skilled
+        </em>
+
+        <strong>
+          content.<br>
+          design.<br>
+          systems.
+        </strong>
+
+      </span>
+
+      <span class="about-soft-panel"></span>
+
+    </div>
+
+
+    <div class="about-content">
+
+      <div class="about-heading">
+
+        <h2>
+          meet jenna<span>...</span>
+        </h2>
+
+        <p class="about-script">
+          before we dive in, here's a little about me
+        </p>
+
+      </div>
+
+
+      <div class="about-copy">
+
+        <p class="about-intro">
+          Hi, I’m <strong>Jenna</strong> — Virtual Assistant by day,
+          digital marketing creative by default.
+        </p>
+
+        <p>
+          I started in customer service, sales, and marketing support...
+          and somewhere along the way realized I actually love turning
+          other people’s messy ideas into something organized and engaging.
+          Picked up social media management, content creation, graphic
+          design, short-form video editing, copywriting, SEO, and marketing
+          systems along the way — basically a buffet, and I ate it all.
+        </p>
+
+        <p>
+          I gravitate toward the creative and strategic side of digital
+          marketing, but I secretly love the behind-the-scenes chaos too —
+          taking a messy project and making it run smooth. I’m always hunting
+          for a new tool or a faster way to do things, because why make it
+          harder than it needs to be?
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="about-collage">
+
+      <img
+        src="assets/meetjenna.png"
+        alt="Jenna photo collage"
+        class="meet-jenna-collage"
+      >
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       MY GOAL
+  ====================================================== -->
+
+  <section class="goal-section">
+
+    <h2 class="goal-title">
+      my goal:
+    </h2>
+
+    <div
+      class="goal-doodle"
+      aria-hidden="true"
+    >
+
+      <svg
+        viewBox="0 0 1000 500"
+        preserveAspectRatio="none"
+      >
+
+        <path
+          class="goal-line"
+          d="
+          M 90 500
+          C 60 390, 100 315, 175 350
+          C 230 380, 205 440, 170 425
+          C 120 405, 150 335, 230 300
+          C 315 255, 290 180, 365 155
+          C 450 125, 480 220, 555 190
+          C 645 155, 610 75, 690 65
+          C 745 58, 760 125, 720 145
+          C 665 170, 645 90, 715 65
+          C 790 30, 840 105, 900 70
+          C 945 45, 960 40, 980 35
+          "
+        />
+
+        <path
+          class="goal-arrow"
+          d="
+          M 960 20
+          L 985 35
+          L 970 60
+          "
+        />
+
+      </svg>
+
+    </div>
+
+    <img
+      src="assets/doodles/sparkle_black_top.svg"
+      alt=""
+      aria-hidden="true"
+      class="decor-doodle goal-decor goal-decor-top"
+    >
+
+    <img
+      src="assets/doodles/burst_wine_right.svg"
+      alt=""
+      aria-hidden="true"
+      class="decor-doodle goal-decor goal-decor-right"
+    >
+
+    <img
+      src="assets/doodles/burst_wine_bottom_left.svg"
+      alt=""
+      aria-hidden="true"
+      class="decor-doodle goal-decor goal-decor-left"
+    >
+
+    <div class="goal-copy">
+
+      <p>
+        <strong>Grow</strong> into a well-rounded digital marketing
+        pro, working with people and brands who actually value
+        creativity, organization, and work that isn’t rushed.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       A LITTLE ABOUT ME
+  ====================================================== -->
+
+  <section class="little-about">
+
+
+    <!-- animated effects -->
+
+    <div
+      class="little-about-effects"
+      aria-hidden="true"
+    >
+
+      <span class="little-orb little-orb-one"></span>
+
+      <span class="little-orb little-orb-two"></span>
+
+      <span class="little-line"></span>
+
+      <span class="little-status-dot dot-one"></span>
+
+      <span class="little-status-dot dot-two"></span>
+
+      <span class="little-status-dot dot-three"></span>
+
+      <span class="little-highlight"></span>
+
+      <span class="little-label">
+        off-duty mode
+      </span>
+
+    </div>
+
+
+    <!-- collage -->
+
+    <div class="little-about-collage">
+
+      <img
+        src="assets/aboutjenna.png"
+        alt="Jenna lifestyle collage"
+        class="about-jenna-collage"
+      >
+
+    </div>
+
+
+    <!-- text -->
+
+    <div class="little-about-content">
+
+      <div class="little-about-heading">
+
+        <h2>
+          a little about me:
+        </h2>
+
+        <p>
+          because there’s more to me than a job title
+        </p>
+
+      </div>
+
+      <ul class="little-about-list">
+
+        <li>
+          <strong>Cozy games addict</strong> — if there’s a game
+          that lets me relax and get lost in a little virtual world,
+          I’m there.
+        </li>
+
+        <li>
+          There’s basically
+          <strong>always music playing</strong>
+          in the background, no matter what I’m doing.
+        </li>
+
+        <li>
+          Movies, vlogs, travel, food, and entertainment content —
+          <strong>always queued up.</strong>
+        </li>
+
+        <li>
+          <strong>Makeup</strong>
+          is my creative outlet outside of work. Yes, obsessed.
+        </li>
+
+        <li>
+          <strong>Dog mom</strong>,
+          and I will talk about my dogs for way longer than you’d expect.
+        </li>
+
+        <li>
+          <strong>Naturally curious</strong> —
+          I love learning new tools, especially the ones that actually
+          make my work easier.
+        </li>
+
+        <li>
+          Slightly
+          <strong>obsessed with organizing</strong> —
+          a workspace, a content calendar, a Notion page,
+          or just my own thoughts.
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       WORKS & SKILLS
+  ====================================================== -->
+
+  <section class="works-skills">
+
+    <div class="ws-grain"></div>
+
+    <div class="ws-bg-scrap ws-bg-scrap-left"></div>
+
+    <div class="ws-bg-scrap ws-bg-scrap-top-right"></div>
+
+    <div class="ws-bg-scrap ws-bg-scrap-bottom-left"></div>
+
+    <div class="ws-bg-scrap ws-bg-scrap-bottom-right"></div>
+
+
+    <!-- title -->
+
+    <div class="ws-heading">
+
+      <h2>
+        works &amp; skills <em>(detailed)</em>:
+      </h2>
+
+      <svg
+        class="ws-heading-underline"
+        viewBox="0 0 440 30"
+        aria-hidden="true"
+      >
+
+        <path
+          d="
+          M5 18
+          C90 25, 175 8, 260 16
+          C330 22, 385 10, 435 16
+          "
+        ></path>
+
+      </svg>
+
+    </div>
+
+
+    <p class="ws-top-note">
+      skills<br>
+      for creative<br>
+      impact ♡
+    </p>
+
+
+    <!-- LEFT PHOTO FILM -->
+
+    <div class="ws-photo-card ws-photo-left">
+
+      <div class="ws-photo-tape"></div>
+
+      <img
+        src="assets/works-cafe.png"
+        alt="Jenna sitting outside a cafe"
+      >
+
+    </div>
+
+
+    <div class="ws-note-scrap ws-note-left">
+
+      <p>
+        content<br>
+        ideas<br>
+        strategy<br>
+        results ♡
+      </p>
+
+    </div>
+
+
+    <svg
+      class="ws-arrow ws-arrow-left"
+      viewBox="0 0 110 170"
+      aria-hidden="true"
+    >
+
+      <path
+        d="
+        M65 5
+        C20 30, 25 80, 55 102
+        C75 118, 72 140, 42 154
+        "
+      ></path>
+
+      <path
+        d="
+        M31 145
+        L42 156
+        L53 143
+        "
+      ></path>
+
+    </svg>
+
+
+    <img
+      src="assets/doodles/sparkle_wine_top.svg"
+      alt=""
+      aria-hidden="true"
+      class="ws-doodle ws-doodle-one"
+    >
+
+    <img
+      src="assets/doodles/burst_wine_right.svg"
+      alt=""
+      aria-hidden="true"
+      class="ws-doodle ws-doodle-two"
+    >
+
+    <img
+      src="assets/doodles/sparkle_wine_bottom.svg"
+      alt=""
+      aria-hidden="true"
+      class="ws-doodle ws-doodle-three"
+    >
+
+
+    <!-- cards -->
+
+    <div class="ws-grid">
+
+
+      <!-- SOCIAL -->
+
+      <article class="ws-card ws-card-social">
+
+        <span class="ws-tape ws-tape-pink"></span>
+
+        <h3>
+          Social Media &amp; Content:
+        </h3>
+
+        <ul>
+          <li>Social Media Management</li>
+          <li>Content Creation</li>
+          <li>Content Planning &amp; Strategy</li>
+          <li>Social Media Strategy</li>
+          <li>Content Calendar Management</li>
+          <li>Short-Form Video Editing</li>
+          <li>Graphic Design</li>
+          <li>Copywriting &amp; Caption Writing</li>
+          <li>Community Management</li>
+          <li>Social Media Scheduling</li>
+          <li>Social Media Analytics &amp; Reporting</li>
+          <li>Hashtag &amp; Keyword Research</li>
+        </ul>
+
+      </article>
+
+
+      <!-- DESIGN -->
+
+      <article class="ws-card ws-card-design">
+
+        <span class="ws-tape ws-tape-beige"></span>
+
+        <h3>
+          Design &amp; Multimedia:
+        </h3>
+
+        <ul>
+          <li>Canva Design</li>
+          <li>Reels &amp; TikTok Editing</li>
+          <li>Promotional Graphics</li>
+          <li>Lead Magnet / PDF Design</li>
+          <li>Basic Brand Identity</li>
+          <li>Photo Editing</li>
+        </ul>
+
+      </article>
+
+
+      <!-- MARKETING -->
+
+      <article class="ws-card ws-card-marketing">
+
+        <span class="ws-tape ws-tape-beige"></span>
+
+        <h3>
+          Marketing:
+        </h3>
+
+        <ul>
+          <li>Digital Marketing</li>
+          <li>Email Marketing</li>
+          <li>Lead Generation</li>
+          <li>Lead Magnet Creation</li>
+          <li>Funnel Development</li>
+          <li>Marketing Automation</li>
+          <li>Campaign Planning</li>
+          <li>SEO / Search Engine Optimization</li>
+        </ul>
+
+      </article>
+
+
+      <!-- SYSTEM -->
+
+      <article class="ws-card ws-card-system">
+
+        <span class="ws-tape ws-tape-pink"></span>
+
+        <h3>
+          System &amp; Tech:
+        </h3>
+
+        <ul>
+          <li>Workflow Automation</li>
+          <li>Social Media Automation</li>
+          <li>CRM Management</li>
+          <li>Email Automation</li>
+          <li>Form &amp; Survey Creation</li>
+          <li>Landing Page Setup</li>
+          <li>Basic Web Design</li>
+          <li>Website Content Updates</li>
+          <li>Project &amp; Task Management</li>
+          <li>Data Organization</li>
+        </ul>
+
+      </article>
+
+    </div>
+
+
+    <p class="ws-side-note ws-side-note-left">
+      ideas<br>
+      to<br>
+      opportunities ♡
+    </p>
+
+
+    <!-- RIGHT PHOTO FILM -->
+
+    <div class="ws-photo-card ws-photo-right">
+
+      <div class="ws-photo-tape"></div>
+
+      <img
+        src="assets/works-theater.png"
+        alt="Jenna at a theater"
+      >
+
+      <p>
+        good content,<br>
+        brighter days ♡
+      </p>
+
+    </div>
+
+
+    <div class="ws-note-scrap ws-note-right">
+
+      <p>
+        systems<br>
+        today,<br>
+        bigger<br>
+        tomorrows ♡
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+    <!-- KIND WORDS / CLIENT REVIEWS -->
+    <section
+      class="m-review-section"
+      id="kind-words"
+    >
+
+
+      <div
+        class="m-review-decor"
+        aria-hidden="true"
+      >
+
+        <span class="review-orbit review-orbit-one"></span>
+
+        <span class="review-orbit review-orbit-two"></span>
+
+        <span class="review-glow"></span>
+
+      </div>
+
+
+      <div class="m-review-heading">
+
+        <h2>
+          kind<br>
+          words
+        </h2>
+
+
+        <p>
+          a few words from<br>
+          people i've worked with ♡
+        </p>
+
+      </div>
+
+
+
+      <div class="desktop-review-layout">
+      <div class="desktop-review-left">
+      <div class="kind-words-slider">
+
+        <div
+          class="kind-words-wall"
+          id="kindWordsWall"
+        >
+
+          <div
+            class="kind-words-loading"
+            id="kindWordsLoading"
+          >
+            loading kind words...
+          </div>
+
+        </div>
+
+
+        <div
+          class="kind-words-dots"
+          id="kindWordsDots"
+          aria-label="Review navigation"
+        ></div>
+
+      </div>
+
+
+
+      <div
+        class="kind-words-empty"
+        id="kindWordsEmpty"
+        hidden
+      >
+
+        <span>
+          ♡
+        </span>
+
+        <p>
+          no notes here yet.<br>
+          maybe yours will be the first?
+        </p>
+
+      </div>
+
+
+
+      </div>
+      <div class="desktop-review-right">
+      <div class="kind-words-divider">
+
+        <span></span>
+
+        <p>
+          leave yours
+        </p>
+
+        <span></span>
+
+      </div>
+
+
+
+      <div class="m-review-form-heading">
+
+        <p>
+          worked with me before?<br>
+          leave a little note ♡
+        </p>
+
+      </div>
+
+
+
+      <div class="m-review-form-wrap">
+
+        <div class="m-review-paper">
+
+
+          <div class="m-review-paper-top">
+
+            <span class="review-small-label">
+              your experience matters
+            </span>
+
+
+            <span
+              class="review-heart"
+              aria-hidden="true"
+            >
+              ♡
+            </span>
+
+          </div>
+
+
+
+          <form
+            class="m-review-form"
+            id="clientReviewForm"
+            novalidate
+          >
+
+
+            <div class="review-field">
+
+              <label for="reviewName">
+
+                Your Name
+                <span>*</span>
+
+              </label>
+
+
+              <input
+                type="text"
+                id="reviewName"
+                name="name"
+                maxlength="80"
+                placeholder="e.g. Jenna Tonido"
+                autocomplete="name"
+                required
+              >
+
+
+              <small class="review-error"></small>
+
+            </div>
+
+
+
+            <div class="review-field">
+
+              <label for="reviewCompany">
+                Company / Role
+              </label>
+
+
+              <input
+                type="text"
+                id="reviewCompany"
+                name="company"
+                maxlength="100"
+                placeholder="e.g. Founder, Your Company"
+              >
+
+            </div>
+
+
+
+            <div class="review-field">
+
+              <label>
+
+                Rating
+                <span>*</span>
+
+              </label>
+
+
+              <div
+                class="review-stars"
+                id="reviewStars"
+                role="radiogroup"
+                aria-label="Choose a rating"
+              >
+
+                <button type="button" class="review-star" data-rating="1">★</button>
+                <button type="button" class="review-star" data-rating="2">★</button>
+                <button type="button" class="review-star" data-rating="3">★</button>
+                <button type="button" class="review-star" data-rating="4">★</button>
+                <button type="button" class="review-star" data-rating="5">★</button>
+
+              </div>
+
+
+              <input
+                type="hidden"
+                id="reviewRating"
+                value=""
+              >
+
+
+              <small
+                class="review-rating-text"
+                id="reviewRatingText"
+              >
+                tap a star to rate
+              </small>
+
+
+              <small
+                class="review-error"
+                id="ratingError"
+              ></small>
+
+            </div>
+
+
+
+            <div class="review-field">
+
+              <label for="reviewMessage">
+
+                Your Review
+                <span>*</span>
+
+              </label>
+
+
+              <textarea
+                id="reviewMessage"
+                name="review"
+                rows="6"
+                minlength="5"
+                maxlength="500"
+                placeholder="Tell me about your experience working with me..."
+                required
+              ></textarea>
+
+
+              <div class="review-textarea-bottom">
+
+                <small class="review-error"></small>
+
+
+                <small
+                  class="review-count"
+                  id="reviewCount"
+                >
+                  0 / 500
+                </small>
+
+              </div>
+
+            </div>
+
+
+
+            <div
+              class="review-consent-wrap"
+              id="reviewConsentWrap"
+              hidden
+            >
+
+              <label class="review-consent">
+
+                <input
+                  type="checkbox"
+                  id="reviewConsent"
+                >
+
+
+                <span class="review-checkbox"></span>
+
+
+                <span class="review-consent-text">
+
+                  I’m okay with this review being displayed
+                  on Jenna’s portfolio.
+
+                </span>
+
+              </label>
+
+
+              <p class="review-private-note">
+
+                Optional — if you leave this unchecked,
+                Jenna can review it privately first.
+                If it is later shared, your identity will stay anonymous.
+
+              </p>
+
+            </div>
+
+
+
+            <button
+              type="submit"
+              class="review-submit"
+              id="reviewSubmit"
+            >
+
+              <span id="reviewSubmitText">
+                Submit Review
+              </span>
+
+
+              <span class="review-submit-arrow">
+                ↗
+              </span>
+
+            </button>
+
+          </form>
+
+
+
+          <div
+            class="review-success"
+            id="reviewSuccess"
+            hidden
+          >
+
+            <span class="review-success-heart">
+              ♡
+            </span>
+
+
+            <h3>
+              thank you!
+            </h3>
+
+
+            <p id="reviewSuccessMessage">
+              your kind words have been submitted.
+            </p>
+
+
+            <button
+              type="button"
+              id="leaveAnotherReview"
+            >
+              leave another review
+            </button>
+
+          </div>
+
+
+
+          <div
+            class="review-submit-error"
+            id="reviewSubmitError"
+            hidden
+          >
+            Something went wrong. Please try again.
+          </div>
+
+
+        </div>
+
+      </div>
+
+      </div>
+      </div>
+
+    </section>
+
+</main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    const SUPABASE_URL = "https://skeqmfdolslqoxodtdwj.supabase.co";
+
+
+    const SUPABASE_ANON_KEY = "sb_publishable__O7tc353Pa8yAx3A9CET0Q_iPvUmKhw";
+
+
+    const supabaseClient =
+      window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_ANON_KEY
+      );
+
+
+
+    /* ======================================================
+       REVIEWS
+    ====================================================== */
+
+    const reviewForm =
+      document.getElementById(
+        "clientReviewForm"
+      );
+
+
+    const reviewName =
+      document.getElementById(
+        "reviewName"
+      );
+
+
+    const reviewCompany =
+      document.getElementById(
+        "reviewCompany"
+      );
+
+
+    const reviewStars =
+      document.querySelectorAll(
+        ".review-star"
+      );
+
+
+    const reviewRating =
+      document.getElementById(
+        "reviewRating"
+      );
+
+
+    const reviewRatingText =
+      document.getElementById(
+        "reviewRatingText"
+      );
+
+
+    const ratingError =
+      document.getElementById(
+        "ratingError"
+      );
+
+
+    const reviewMessage =
+      document.getElementById(
+        "reviewMessage"
+      );
+
+
+    const reviewCount =
+      document.getElementById(
+        "reviewCount"
+      );
+
+
+    const reviewConsentWrap =
+      document.getElementById(
+        "reviewConsentWrap"
+      );
+
+
+    const reviewConsent =
+      document.getElementById(
+        "reviewConsent"
+      );
+
+
+    const reviewSuccess =
+      document.getElementById(
+        "reviewSuccess"
+      );
+
+
+    const reviewSuccessMessage =
+      document.getElementById(
+        "reviewSuccessMessage"
+      );
+
+
+    const leaveAnotherReview =
+      document.getElementById(
+        "leaveAnotherReview"
+      );
+
+
+    const kindWordsWall =
+      document.getElementById(
+        "kindWordsWall"
+      );
+
+
+    const kindWordsLoading =
+      document.getElementById(
+        "kindWordsLoading"
+      );
+
+
+    const kindWordsEmpty =
+      document.getElementById(
+        "kindWordsEmpty"
+      );
+
+
+    const kindWordsDots =
+      document.getElementById(
+        "kindWordsDots"
+      );
+
+
+    const reviewSubmit =
+      document.getElementById(
+        "reviewSubmit"
+      );
+
+
+    const reviewSubmitText =
+      document.getElementById(
+        "reviewSubmitText"
+      );
+
+
+    const reviewSubmitError =
+      document.getElementById(
+        "reviewSubmitError"
+      );
+
+
+    let selectedRating = 0;
+
+
+
+    const ratingLabels = {
+
+      1: "1 star — could be better",
+
+      2: "2 stars — okay",
+
+      3: "3 stars — good",
+
+      4: "4 stars — great",
+
+      5: "5 stars — loved it ♡"
+
+    };
+
+
+
+    function updateStars(value) {
+
+      reviewStars.forEach(
+        star => {
+
+          const starValue =
+            Number(
+              star.dataset.rating
+            );
+
+
+          star.classList.toggle(
+            "active",
+            starValue <= value
+          );
+
+        }
+      );
+
+    }
+
+
+
+    reviewStars.forEach(
+      star => {
+
+
+        star.addEventListener(
+          "click",
+          () => {
+
+            selectedRating =
+              Number(
+                star.dataset.rating
+              );
+
+
+            reviewRating.value =
+              selectedRating;
+
+
+            updateStars(
+              selectedRating
+            );
+
+
+            reviewRatingText.textContent =
+              ratingLabels[
+                selectedRating
+              ];
+
+
+            ratingError.textContent =
+              "";
+
+
+            checkReviewCompletion();
+
+          }
+        );
+
+
+        star.addEventListener(
+          "mouseenter",
+          () => {
+
+            const previewValue =
+              Number(
+                star.dataset.rating
+              );
+
+
+            reviewStars.forEach(
+              item => {
+
+                item.classList.toggle(
+                  "preview",
+                  Number(
+                    item.dataset.rating
+                  )
+                  <=
+                  previewValue
+                );
+
+              }
+            );
+
+          }
+        );
+
+
+        star.addEventListener(
+          "mouseleave",
+          () => {
+
+            reviewStars.forEach(
+              item => {
+
+                item.classList.remove(
+                  "preview"
+                );
+
+              }
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+
+    function checkReviewCompletion() {
+
+      const complete =
+        reviewName.value.trim().length > 0
+        &&
+        selectedRating > 0
+        &&
+        reviewMessage.value.trim().length >= 5;
+
+
+      if (
+        complete
+      ) {
+
+        reviewConsentWrap.hidden =
+          false;
+
+
+        requestAnimationFrame(
+          () => {
+
+            reviewConsentWrap.classList.add(
+              "is-visible"
+            );
+
+          }
+        );
+
+      } else {
+
+        reviewConsentWrap.classList.remove(
+          "is-visible"
+        );
+
+
+        reviewConsent.checked =
+          false;
+
+
+        setTimeout(
+          () => {
+
+            if (
+              !reviewConsentWrap
+                .classList
+                .contains(
+                  "is-visible"
+                )
+            ) {
+
+              reviewConsentWrap.hidden =
+                true;
+
+            }
+
+          },
+          250
+        );
+
+      }
+
+    }
+
+
+
+    reviewName.addEventListener(
+      "input",
+      checkReviewCompletion
+    );
+
+
+    reviewMessage.addEventListener(
+      "input",
+      () => {
+
+        reviewCount.textContent =
+          `${reviewMessage.value.length} / 500`;
+
+
+        checkReviewCompletion();
+
+      }
+    );
+
+
+
+    function createReviewCard(review) {
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+
+      card.className =
+        "kind-word-card";
+
+
+      const quote =
+        document.createElement(
+          "span"
+        );
+
+
+      quote.className =
+        "kind-word-quote";
+
+
+      quote.textContent =
+        "“";
+
+
+      const stars =
+        document.createElement(
+          "div"
+        );
+
+
+      stars.className =
+        "kind-word-stars";
+
+
+      stars.textContent =
+        "★".repeat(
+          Number(
+            review.rating
+          )
+        );
+
+
+      const message =
+        document.createElement(
+          "p"
+        );
+
+
+      message.className =
+        "kind-word-message";
+
+
+      message.textContent =
+        review.review;
+
+
+      const person =
+        document.createElement(
+          "div"
+        );
+
+
+      person.className =
+        "kind-word-person";
+
+
+      const name =
+        document.createElement(
+          "strong"
+        );
+
+
+      name.textContent =
+        review.anonymous
+          ? "Anonymous"
+          : review.name;
+
+
+      person.appendChild(
+        name
+      );
+
+
+      if (
+        !review.anonymous
+        &&
+        review.company
+        &&
+        review.company.trim() !== ""
+      ) {
+
+        const company =
+          document.createElement(
+            "span"
+          );
+
+
+        company.textContent =
+          review.company;
+
+
+        person.appendChild(
+          company
+        );
+
+      }
+
+
+      card.appendChild(
+        quote
+      );
+
+
+      card.appendChild(
+        stars
+      );
+
+
+      card.appendChild(
+        message
+      );
+
+
+      card.appendChild(
+        person
+      );
+
+
+      return card;
+
+    }
+
+
+
+    /* ======================================================
+       AUTO SLIDER
+    ====================================================== */
+
+    let kindWordsCurrentIndex =
+      0;
+
+
+    let kindWordsAutoTimer =
+      null;
+
+
+    let kindWordsResumeTimer =
+      null;
+
+
+    let kindWordsScrollTimer =
+      null;
+
+
+    let sliderIsProgrammatic =
+      false;
+
+
+    const KIND_WORDS_DELAY =
+      3800;
+
+
+    const KIND_WORDS_RESUME_DELAY =
+      5500;
+
+
+
+    function getReviewCards() {
+
+      return Array.from(
+        kindWordsWall.querySelectorAll(
+          ".kind-word-card"
+        )
+      );
+
+    }
+
+
+
+    function updateKindWordsSlider() {
+
+      const cards =
+        getReviewCards();
+
+
+      const dots =
+        kindWordsDots.querySelectorAll(
+          ".kind-words-dot"
+        );
+
+
+      cards.forEach(
+        (card, index) => {
+
+          card.classList.toggle(
+            "is-active",
+            index === kindWordsCurrentIndex
+          );
+
+        }
+      );
+
+
+      dots.forEach(
+        (dot, index) => {
+
+          dot.classList.toggle(
+            "is-active",
+            index === kindWordsCurrentIndex
+          );
+
+
+          dot.setAttribute(
+            "aria-current",
+            index === kindWordsCurrentIndex
+              ? "true"
+              : "false"
+          );
+
+        }
+      );
+
+    }
+
+
+
+    function createKindWordsDots() {
+
+      const cards =
+        getReviewCards();
+
+
+      kindWordsDots.innerHTML =
+        "";
+
+
+      cards.forEach(
+        (_, index) => {
+
+          const dot =
+            document.createElement(
+              "button"
+            );
+
+
+          dot.type =
+            "button";
+
+
+          dot.className =
+            "kind-words-dot";
+
+
+          dot.setAttribute(
+            "aria-label",
+            `Go to review ${index + 1}`
+          );
+
+
+          dot.addEventListener(
+            "click",
+            () => {
+
+              goToReview(
+                index,
+                true
+              );
+
+            }
+          );
+
+
+          kindWordsDots.appendChild(
+            dot
+          );
+
+        }
+      );
+
+
+      kindWordsDots.hidden =
+        cards.length <= 1;
+
+
+      updateKindWordsSlider();
+
+    }
+
+
+
+    function scrollCardIntoCenter(card) {
+
+      const targetLeft =
+        card.offsetLeft
+        -
+        (
+          kindWordsWall.clientWidth
+          -
+          card.clientWidth
+        ) / 2;
+
+
+      sliderIsProgrammatic =
+        true;
+
+
+      kindWordsWall.scrollTo({
+
+        left:
+          targetLeft,
+
+        behavior:
+          "smooth"
+
+      });
+
+
+      setTimeout(
+        () => {
+
+          sliderIsProgrammatic =
+            false;
+
+        },
+        700
+      );
+
+    }
+
+
+
+    function goToReview(
+      index,
+      userAction = false
+    ) {
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length === 0
+      ) {
+
+        return;
+
+      }
+
+
+      if (
+        index < 0
+      ) {
+
+        index =
+          cards.length - 1;
+
+      }
+
+
+      if (
+        index >= cards.length
+      ) {
+
+        index =
+          0;
+
+      }
+
+
+      kindWordsCurrentIndex =
+        index;
+
+
+      scrollCardIntoCenter(
+        cards[index]
+      );
+
+
+      updateKindWordsSlider();
+
+
+      if (
+        userAction
+      ) {
+
+        pauseKindWordsAutoplay();
+
+      }
+
+    }
+
+
+
+    function stopKindWordsAutoplay() {
+
+      clearInterval(
+        kindWordsAutoTimer
+      );
+
+
+      kindWordsAutoTimer =
+        null;
+
+    }
+
+
+
+    function startKindWordsAutoplay() {
+
+      stopKindWordsAutoplay();
+
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length <= 1
+      ) {
+
+        return;
+
+      }
+
+
+      kindWordsAutoTimer =
+        setInterval(
+          () => {
+
+            goToReview(
+              kindWordsCurrentIndex + 1
+            );
+
+          },
+          KIND_WORDS_DELAY
+        );
+
+    }
+
+
+
+    function pauseKindWordsAutoplay() {
+
+      stopKindWordsAutoplay();
+
+
+      clearTimeout(
+        kindWordsResumeTimer
+      );
+
+
+      kindWordsWall.classList.add(
+        "is-paused"
+      );
+
+
+      kindWordsResumeTimer =
+        setTimeout(
+          () => {
+
+            kindWordsWall.classList.remove(
+              "is-paused"
+            );
+
+
+            startKindWordsAutoplay();
+
+          },
+          KIND_WORDS_RESUME_DELAY
+        );
+
+    }
+
+
+
+    function detectCenteredReview() {
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length === 0
+      ) {
+
+        return;
+
+      }
+
+
+      const wallRect =
+        kindWordsWall.getBoundingClientRect();
+
+
+      const wallCenter =
+        wallRect.left
+        +
+        wallRect.width / 2;
+
+
+      let closestIndex =
+        0;
+
+
+      let closestDistance =
+        Infinity;
+
+
+      cards.forEach(
+        (card, index) => {
+
+          const cardRect =
+            card.getBoundingClientRect();
+
+
+          const cardCenter =
+            cardRect.left
+            +
+            cardRect.width / 2;
+
+
+          const distance =
+            Math.abs(
+              wallCenter
+              -
+              cardCenter
+            );
+
+
+          if (
+            distance < closestDistance
+          ) {
+
+            closestDistance =
+              distance;
+
+
+            closestIndex =
+              index;
+
+          }
+
+        }
+      );
+
+
+      kindWordsCurrentIndex =
+        closestIndex;
+
+
+      updateKindWordsSlider();
+
+    }
+
+
+
+    kindWordsWall.addEventListener(
+      "scroll",
+      () => {
+
+        clearTimeout(
+          kindWordsScrollTimer
+        );
+
+
+        kindWordsScrollTimer =
+          setTimeout(
+            detectCenteredReview,
+            80
+          );
+
+      },
+      {
+        passive: true
+      }
+    );
+
+
+
+    kindWordsWall.addEventListener(
+      "touchstart",
+      () => {
+
+        if (
+          !sliderIsProgrammatic
+        ) {
+
+          pauseKindWordsAutoplay();
+
+        }
+
+      },
+      {
+        passive: true
+      }
+    );
+
+
+
+    kindWordsWall.addEventListener(
+      "pointerdown",
+      () => {
+
+        if (
+          !sliderIsProgrammatic
+        ) {
+
+          pauseKindWordsAutoplay();
+
+        }
+
+      }
+    );
+
+
+
+    function initializeKindWordsSlider(
+      startIndex = 0
+    ) {
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length === 0
+      ) {
+
+        kindWordsDots.hidden =
+          true;
+
+
+        return;
+
+      }
+
+
+      kindWordsCurrentIndex =
+        Math.min(
+          startIndex,
+          cards.length - 1
+        );
+
+
+      createKindWordsDots();
+
+
+      requestAnimationFrame(
+        () => {
+
+          goToReview(
+            kindWordsCurrentIndex
+          );
+
+
+          startKindWordsAutoplay();
+
+        }
+      );
+
+    }
+
+
+
+    /* ======================================================
+       LOAD REVIEWS
+    ====================================================== */
+
+    async function loadReviews() {
+
+      stopKindWordsAutoplay();
+
+
+      kindWordsLoading.hidden =
+        false;
+
+
+      kindWordsEmpty.hidden =
+        true;
+
+
+      kindWordsDots.hidden =
+        true;
+
+
+
+      const {
+        data,
+        error
+      } =
+        await supabaseClient
+
+          .from(
+            "reviews"
+          )
+
+          .select(
+            "id,name,company,rating,review,display_permission,approved,anonymous,created_at"
+          )
+
+          .eq("approved", true)
+          .eq("display_permission", true)
+
+          .order(
+            "created_at",
+            {
+              ascending:
+                false
+            }
+          );
+
+
+
+      kindWordsLoading.hidden =
+        true;
+
+
+
+      if (
+        error
+      ) {
+
+        console.error(
+          "Review load error:",
+          error
+        );
+
+
+        kindWordsEmpty.hidden =
+          false;
+
+
+        return;
+
+      }
+
+
+
+      kindWordsWall
+        .querySelectorAll(
+          ".kind-word-card"
+        )
+        .forEach(
+          card => {
+
+            card.remove();
+
+          }
+        );
+
+
+
+      if (
+        !data
+        ||
+        data.length === 0
+      ) {
+
+        kindWordsEmpty.hidden =
+          false;
+
+
+        kindWordsDots.hidden =
+          true;
+
+
+        return;
+
+      }
+
+
+
+      kindWordsEmpty.hidden =
+        true;
+
+
+
+      data.forEach(
+        review => {
+
+          kindWordsWall.appendChild(
+            createReviewCard(
+              review
+            )
+          );
+
+        }
+      );
+
+
+
+      initializeKindWordsSlider(
+        0
+      );
+
+    }
+
+
+
+    /* ======================================================
+       SUBMIT
+    ====================================================== */
+
+    reviewForm.addEventListener(
+      "submit",
+      async event => {
+
+        event.preventDefault();
+
+
+        let valid =
+          true;
+
+
+        reviewSubmitError.hidden =
+          true;
+
+
+        reviewForm
+          .querySelectorAll(
+            ".review-error"
+          )
+          .forEach(
+            error => {
+
+              error.textContent =
+                "";
+
+            }
+          );
+
+
+
+        if (
+          !reviewName.value.trim()
+        ) {
+
+          reviewName
+            .closest(
+              ".review-field"
+            )
+            .querySelector(
+              ".review-error"
+            )
+            .textContent =
+              "please enter your name.";
+
+
+          valid =
+            false;
+
+        }
+
+
+
+        if (
+          !selectedRating
+        ) {
+
+          ratingError.textContent =
+            "please choose a rating.";
+
+
+          valid =
+            false;
+
+        }
+
+
+
+        if (
+          reviewMessage
+            .value
+            .trim()
+            .length < 5
+        ) {
+
+          reviewMessage
+            .closest(
+              ".review-field"
+            )
+            .querySelector(
+              ".review-error"
+            )
+            .textContent =
+              "please write a short review.";
+
+
+          valid =
+            false;
+
+        }
+
+
+
+        if (
+          !valid
+        ) {
+
+          return;
+
+        }
+
+
+
+        const publicPermission =
+          reviewConsent.checked;
+
+
+
+        const newReview = {
+
+          name:
+            reviewName.value.trim(),
+
+          company:
+            reviewCompany.value.trim()
+            ||
+            null,
+
+          rating:
+            selectedRating,
+
+          review:
+            reviewMessage.value.trim(),
+
+          display_permission:
+            publicPermission
+
+        };
+
+
+
+        reviewSubmit.disabled =
+          true;
+
+
+        reviewSubmitText.textContent =
+          "Submitting...";
+
+
+
+        const {
+          error
+        } =
+          await supabaseClient
+
+            .from(
+              "reviews"
+            )
+
+            .insert(
+              [
+                newReview
+              ]
+            );
+
+
+
+        reviewSubmit.disabled =
+          false;
+
+
+        reviewSubmitText.textContent =
+          "Submit Review";
+
+
+
+        if (
+          error
+        ) {
+
+          console.error(
+            "Review submission error:",
+            error
+          );
+
+
+          reviewSubmitError.hidden =
+            false;
+
+
+          return;
+
+        }
+
+
+
+        reviewSuccessMessage.textContent = publicPermission
+          ? "thank you! your review was submitted and is awaiting approval ♡"
+          : "thank you! your private review was submitted. it won't be publicly displayed ♡";
+
+
+
+        reviewForm.hidden =
+          true;
+
+
+        reviewSuccess.hidden =
+          false;
+
+
+        reviewSuccess.scrollIntoView({
+
+          behavior:
+            "smooth",
+
+          block:
+            "center"
+
+        });
+
+      }
+    );
+
+
+
+    leaveAnotherReview.addEventListener(
+      "click",
+      () => {
+
+        reviewForm.reset();
+
+
+        selectedRating =
+          0;
+
+
+        reviewRating.value =
+          "";
+
+
+        updateStars(
+          0
+        );
+
+
+        reviewRatingText.textContent =
+          "tap a star to rate";
+
+
+        reviewCount.textContent =
+          "0 / 500";
+
+
+        ratingError.textContent =
+          "";
+
+
+        reviewSubmitError.hidden =
+          true;
+
+
+        reviewConsentWrap.classList.remove(
+          "is-visible"
+        );
+
+
+        reviewConsentWrap.hidden =
+          true;
+
+
+        reviewSuccess.hidden =
+          true;
+
+
+        reviewForm.hidden =
+          false;
+
+      }
+    );
+
+
+
+    document.addEventListener(
+      "visibilitychange",
+      () => {
+
+        if (
+          document.hidden
+        ) {
+
+          stopKindWordsAutoplay();
+
+        } else {
+
+          startKindWordsAutoplay();
+
+        }
+
+      }
+    );
+
+
+
+    loadReviews();
+
+
+  </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const burger = document.getElementById("desktopBurger");
+  const overlay = document.getElementById("desktopMenu");
+  const menuCard = overlay?.querySelector(".desktop-menu-card");
+  const menuLinks = overlay?.querySelectorAll(".desktop-menu-link");
+
+  if (!burger || !overlay || !menuCard) return;
+
+  let previousFocus = null;
+
+  function openMenu() {
+    previousFocus = document.activeElement;
+
+    burger.classList.add("is-open");
+    overlay.classList.add("is-open");
+
+    burger.setAttribute("aria-expanded", "true");
+    burger.setAttribute("aria-label", "Close navigation menu");
+    overlay.setAttribute("aria-hidden", "false");
+
+    document.body.classList.add("desktop-menu-open");
+
+    overlay.querySelector(".desktop-menu-link")?.focus();
+  }
+
+  function closeMenu(restoreFocus = true) {
+    burger.classList.remove("is-open");
+    overlay.classList.remove("is-open");
+
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "Open navigation menu");
+
+    document.body.classList.remove("desktop-menu-open");
+
+    if (restoreFocus) {
+      (previousFocus || burger).focus();
+    } else {
+      burger.focus();
+    }
+
+    overlay.setAttribute("aria-hidden", "true");
+  }
+
+  burger.addEventListener("click", () => {
+    if (overlay.classList.contains("is-open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  overlay.addEventListener("click", (event) => {
+    if (!menuCard.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!overlay.classList.contains("is-open")) return;
+
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+
+    if (event.key === "Tab") {
+      const focusables = [
+        burger,
+        ...overlay.querySelectorAll("a[href]")
+      ];
+
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href");
+
+      if (href && href.startsWith("#")) {
+        event.preventDefault();
+
+        const section = document.querySelector(href);
+
+        closeMenu(false);
+
+        if (section) {
+          section.scrollIntoView({
+            behavior: window.matchMedia(
+              "(prefers-reduced-motion: reduce)"
+            ).matches ? "auto" : "smooth",
+            block: "start"
+          });
+        }
+      } else {
+        closeMenu(false);
+      }
+    });
+  });
+
+});
+</script>
+
+<script>
+  // Disable right-click context menu
+  document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  });
+</script>
+
+</body>
+</html>

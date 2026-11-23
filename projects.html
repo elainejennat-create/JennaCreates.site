@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects — Coming Soon | Jenna Tonido</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="projects.css">
+  <script src="projects.js" defer></script>
+</head>
+
+<body>
+
+  <!-- FLOATING NAV -->
+  <header class="project-nav">
+    <a href="/" class="project-logo" aria-label="Go to homepage">
+      <img src="assets/jennalogo.png" alt="Jenna Tonido logo">
+    </a>
+
+    <button
+      class="project-burger"
+      id="projectBurger"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="projectMenu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- BURGER MENU -->
+  <div class="project-menu-overlay" id="projectMenu" aria-hidden="true">
+    <div class="project-menu-card">
+
+      <div class="project-menu-top">
+        <p>where to?</p>
+        <span>EXPLORE</span>
+      </div>
+
+      <nav class="project-menu-links" aria-label="Main navigation">
+        <a href="/">
+          <small>01</small>
+          <strong>Home</strong>
+          <span>↗</span>
+        </a>
+
+        <a href="/projects">
+          <small>02</small>
+          <strong>Projects</strong>
+          <span>↗</span>
+        </a>
+
+        <a href="/#kind-words">
+          <small>03</small>
+          <strong>Kind Words</strong>
+          <span>↗</span>
+        </a>
+      </nav>
+
+      <p class="project-menu-note">
+        take a little look around ♡
+      </p>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE -->
+  <main class="coming-page">
+
+    <!-- ANIMATED BACKGROUND -->
+    <div class="background-effects" aria-hidden="true">
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+      <div class="glow glow-three"></div>
+      <div class="ambient-circle circle-one"></div>
+      <div class="ambient-circle circle-two"></div>
+    </div>
+
+    <!-- DECORATIVE ORBIT LINES -->
+    <svg
+      class="decorative-orbits"
+      viewBox="0 0 1440 900"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path
+        class="orbit-path orbit-left"
+        d="M-50 610 C160 120, 430 230, 540 430 S290 790, 60 610"
+      />
+      <path
+        class="orbit-path orbit-right"
+        d="M1110 200 C1510 100, 1590 510, 1230 620 S900 690, 950 810"
+      />
+    </svg>
+
+    <!-- SPARKLES -->
+    <div class="sparkle sparkle-one" aria-hidden="true">✧</div>
+    <div class="sparkle sparkle-two" aria-hidden="true">✦</div>
+    <div class="sparkle sparkle-three" aria-hidden="true">✧</div>
+    <div class="sparkle sparkle-four" aria-hidden="true">✳</div>
+
+    <!-- MAIN CONTENT -->
+    <div class="coming-content">
+
+      <div class="script-heading entrance entrance-one">
+        <span>projects</span>
+        <svg viewBox="0 0 330 42" aria-hidden="true">
+          <path d="M7 32 C100 10, 215 22, 322 11"></path>
+        </svg>
+      </div>
+
+      <div class="main-heading entrance entrance-two">
+        <h1>
+          <span class="heading-line">coming</span>
+          <span class="heading-line">soon</span>
+        </h1>
+
+        <div class="heading-burst" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </div>
+      </div>
+
+      <p class="coming-subtitle entrance entrance-three">
+        i'm still putting the finishing touches<br>
+        on this space <span>♡</span>
+      </p>
+
+      <!-- FLOATING FOLDER CARD -->
+      <div class="folder-wrapper entrance entrance-four">
+        <div class="folder-card" id="folderCard">
+
+          <div class="tape tape-main" aria-hidden="true"></div>
+
+          <div class="folder-illustration" aria-hidden="true">
+            <svg
+              class="folder-svg"
+              viewBox="0 0 180 150"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="folder-back"
+                d="M24 42 V30 Q24 20 34 20 H68 L84 38 H145 Q156 38 156 49 V115 Q156 125 146 125 H34 Q24 125 24 115 Z"
+              />
+
+              <path
+                class="folder-paper"
+                d="M46 30 H123 V96 H46 Z"
+              />
+
+              <path
+                class="folder-front"
+                d="M24 63 Q24 52 35 52 H149 Q161 52 158 65 L145 124 H36 Q27 124 24 113 Z"
+              />
+
+              <path
+                class="folder-heart"
+                d="M90 98 C70 85 75 69 87 77 L90 81 L94 77 C107 67 114 85 90 98Z"
+              />
+            </svg>
+
+            <span class="folder-spark folder-spark-one">✦</span>
+            <span class="folder-spark folder-spark-two">✧</span>
+          </div>
+
+          <div class="folder-divider"></div>
+
+          <div class="folder-copy">
+            <h2>
+              a collection of my work<br>
+              will be here soon!
+            </h2>
+            <p>
+              designs, content, campaigns, and<br>
+              more — all in one place.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACK BUTTON -->
+      <div class="back-wrapper entrance entrance-five">
+        <a href="/" class="back-home">
+          <span class="back-arrow">←</span>
+          <span>back to home</span>
+          <span class="button-sparkle" aria-hidden="true">✧</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM HEART DOODLE -->
+    <svg
+      class="heart-line"
+      viewBox="0 0 560 190"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M-10 183 C130 80, 258 150, 338 96
+        C352 87, 359 50, 380 63
+        C398 76, 379 101, 374 105
+        C360 89, 351 70, 366 63
+        C393 52, 406 87, 374 105
+        C440 137, 488 43, 570 18"
+      />
+    </svg>
+
+    <div class="bottom-signature">
+      <span>made with love &amp; a little creativity ♡</span>
+      <span>JENNA TONIDO — PORTFOLIO</span>
+    </div>
+
+  </main>
+
+</body>
+</html>
