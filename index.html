@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Switch between the dedicated desktop and mobile pages. -->
-  <script>
-    (() => {
-      const viewQuery = window.matchMedia("(max-width: 767px)");
-      let navigating = false;
-
-      function switchView() {
-        if (!viewQuery.matches || navigating) return;
-        navigating = true;
-        const destination = new URL("mobile.html", window.location.href);
-        destination.search = window.location.search;
-        destination.hash = window.location.hash;
-        if (destination.href !== window.location.href) {
-          window.location.replace(destination.href);
-        } else {
-          navigating = false;
-        }
-      }
-
-      switchView();
-      viewQuery.addEventListener("change", switchView);
-    })();
-  </script>
 
   <meta charset="UTF-8">
 
@@ -31,6 +8,33 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
+  <!-- Desktop at / ; phone screens at /mobile/ -->
+  <script>
+    (() => {
+      const MOBILE_LIMIT = 760; // Hysteresis with mobile return threshold avoids loops.
+      let navigating = false;
+      const base = new URL('./', window.location.href);
+      // Root index.html and / both map to the same canonical homepage.
+      if (window.location.pathname.endsWith('/index.html')) {
+        const clean = new URL('./', window.location.href);
+        clean.search = window.location.search;
+        clean.hash = window.location.hash;
+        window.location.replace(clean.href);
+        navigating = true;
+      }
+      function route() {
+        if (navigating || window.innerWidth > MOBILE_LIMIT) return;
+        navigating = true;
+        const target = new URL('mobile/', base);
+        target.search = window.location.search;
+        target.hash = window.location.hash;
+        window.location.replace(target.href);
+      }
+      route();
+      window.addEventListener('resize', route, { passive: true });
+    })();
+  </script>
+
 
   <title>Jenna Tonido — Portfolio</title>
 
@@ -2732,13 +2736,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
-</script>
-
-<script>
-  // Disable right-click context menu
-  document.addEventListener("contextmenu", function (event) {
-    event.preventDefault();
-  });
 </script>
 
 </body>
