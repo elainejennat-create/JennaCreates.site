@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6e9d6" />
+  <meta name="description" content="Have a project, collaboration, or idea? Get in touch with Jenna Tonido." />
+  <title>Contact | Jenna Creates</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/Contact/contact.css" />
+  <script src="/Contact/contact.js" defer></script>
+</head>
+<body>
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <header class="site-nav" id="top">
+    <a class="brand-circle" href="/" aria-label="Jenna Creates — Home">
+      <img src="/assets/jennalogo.png" alt="JT" />
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu" id="nav-menu" aria-label="Main menu">
+      <span class="menu-kicker">where to?</span>
+      <a href="/"><small>01</small> Home <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg></a>
+      <a href="/Projects/"><small>02</small> Projects <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg></a>
+      <a href="/#kind-words"><small>03</small> Kind Words <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg></a>
+      <a href="/Contact/" aria-current="page"><small>04</small> Contact <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg></a>
+      <span class="menu-footnote">take a little look around ♡</span>
+    </nav>
+  </header>
+
+  <main class="contact-shell">
+    <div class="hand-note note-top" aria-hidden="true">have an idea?<br/>i'm all ears.
+      <svg viewBox="0 0 95 65"><path d="M4 8 Q65 -7 76 46M56 34l21 14 12-19" /></svg>
+    </div>
+    <section class="intro" aria-labelledby="contact-title">
+      <p class="eyebrow">03 / CONTACT</p>
+      <h1 id="contact-title">let’s make<br>something<br><span class="last-line">good.<em>together?</em></span></h1>
+      <p class="intro-copy">Have a project in mind, a collaboration idea,<br class="only-wide" /> or just want to say hi? I’d love to hear from you! <span class="heart">♡</span></p>
+      <div class="email-paper">
+        <span class="washi" aria-hidden="true"></span>
+        <svg class="mail-illustration" viewBox="0 0 80 62" aria-hidden="true"><rect x="8" y="13" width="64" height="40" rx="4" transform="rotate(-9 40 33)" /><path d="m9 18 31 24 31-24" /></svg>
+        <span class="vertical-line" aria-hidden="true"></span>
+        <span class="email-details"><span class="email-label">EMAIL ME</span><a id="email-link" href="mailto:jennatonido@gmail.com" aria-label="Email Jenna">jennatonido@gmail.com</a></span>
+      </div>
+      <div class="socials">
+        <p class="hand-note social-note">or find me here! <svg viewBox="0 0 56 45" aria-hidden="true"><path d="M5 3Q0 29 39 34M30 25l11 10-13 7" /></svg></p>
+        <div class="social-links">
+          <a id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Jenna on LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v11M4 4.7v.2M9 20V9h4v2c.6-1.2 1.7-2.2 3.7-2.2 3.5 0 4.3 2.2 4.3 5.2V20h-4v-5.4c0-1.5-.1-2.5-1.8-2.5-1.6 0-2.2 1.2-2.2 2.4V20z" /></svg>
+          </a>
+          <a id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Message Jenna on WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6A8.6 8.6 0 0 1 7.4 19L3 20l1.1-4.3a8.6 8.6 0 1 1 16.4-4.1Z" /><path d="M8 8.2c-.5.5-.8 1.2-.5 2.1.8 2.2 3.3 4.6 5.5 5.4.9.3 1.7-.1 2.1-.5l.8-1.1-2.2-1.1-.9.9c-1.1-.6-2.1-1.5-2.7-2.6l.9-1-1.2-2.1Z" /></svg>
+          </a>
+          <span class="social-caption">LinkedIn&nbsp; / &nbsp;WhatsApp</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-area" aria-labelledby="form-title">
+      <div class="postmark" aria-hidden="true"><span>♡</span><i></i><i></i><i></i></div>
+      <div class="letter-sheet">
+        <span class="tape" aria-hidden="true"></span>
+        <h2 id="form-title">drop me a little note ♡</h2>
+        <div class="scribble" aria-hidden="true"></div>
+        <form id="contact-form">
+          <label for="full-name">Name <span>*</span></label>
+          <input id="full-name" name="name" type="text" maxlength="100" placeholder="e.g. Alex Cruz" autocomplete="name" required />
+          <label for="email">Email <span>*</span></label>
+          <input id="email" name="email" type="email" maxlength="200" placeholder="e.g. alex@email.com" autocomplete="email" required />
+          <label for="message">Message <span>*</span></label>
+          <textarea id="message" name="message" rows="6" maxlength="4000" placeholder="Tell me about your project, idea, or inquiry..." required></textarea>
+          <button type="submit">send message <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></button>
+          <p class="form-help">This opens your email app with your message ready to send.</p>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="flower-doodle" aria-hidden="true"><svg viewBox="0 0 180 170"><path d="M90 79Q20 -10 58 13Q95 36 90 79ZM90 79Q117 -7 140 16Q159 44 90 79ZM90 79Q190 44 166 84Q145 104 90 79ZM90 79Q166 144 130 146Q105 142 90 79ZM90 79Q70 165 46 141Q35 118 90 79ZM90 79Q-10 117 13 77Q29 59 90 79Z"/><circle cx="89" cy="80" r="16"/></svg></div>
+  <footer class="footer"><span>Jenna Creates <span aria-hidden="true">✳</span></span><p>made with intention &amp; a little bit of love ♡</p><a href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 20V4m-7 7 7-7 7 7"/></svg></a></footer>
+</body>
+</html>
