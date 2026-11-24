@@ -1,0 +1,2707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+  <!-- Mobile at /mobile/ ; large screens at / -->
+  <script>
+    (() => {
+      const DESKTOP_LIMIT = 800; // Buffer between switches prevents redirect loops.
+      let navigating = false;
+      function route() {
+        if (navigating || window.innerWidth < DESKTOP_LIMIT) return;
+        navigating = true;
+        const target = new URL('../', window.location.href);
+        target.search = window.location.search;
+        target.hash = window.location.hash;
+        window.location.replace(target.href);
+      }
+      route();
+      window.addEventListener('resize', route, { passive: true });
+    })();
+  </script>
+
+
+  <title>Jenna Tonido — Mobile Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../mobile.css">
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       FLOATING NAV
+  ====================================================== -->
+
+  <header class="m-nav">
+
+    <a
+      href="#top"
+      class="m-nav-brand"
+      aria-label="Jenna — Back to top"
+    >
+
+      <img
+        src="../assets/jennalogo.png"
+        alt="Jenna logo"
+        class="m-nav-logo"
+      >
+
+    </a>
+
+
+    <button
+      class="m-burger"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       BURGER MENU
+  ====================================================== -->
+
+  <div
+    class="m-menu-overlay"
+    id="mobileMenu"
+    aria-hidden="true"
+  >
+
+    <div class="m-menu-card">
+
+      <div class="m-menu-top">
+
+        <p class="m-menu-script">
+          where to?
+        </p>
+
+        <span class="m-menu-small">
+          explore
+        </span>
+
+      </div>
+
+
+      <nav class="m-menu-links">
+
+        <a
+          href="../projects-mobile.html"
+          class="m-menu-link"
+        >
+
+          <span class="m-menu-number">
+            01
+          </span>
+
+          <span class="m-menu-title">
+            Projects
+          </span>
+
+          <span class="m-menu-arrow">
+            ↗
+          </span>
+
+        </a>
+
+
+        <a
+          href="#kind-words"
+          class="m-menu-link"
+        >
+
+          <span class="m-menu-number">
+            02
+          </span>
+
+          <span class="m-menu-title">
+            Kind Words
+          </span>
+
+          <span class="m-menu-arrow">
+            ↓
+          </span>
+
+        </a>
+
+      </nav>
+
+
+      <p class="m-menu-note">
+        take a little look around ♡
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <main id="top">
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="m-hero" aria-label="Introduction to Jenna Tonido">
+
+      <div class="m-hero-noise" aria-hidden="true"></div>
+      <div class="m-hero-pink-glow" aria-hidden="true"></div>
+
+      <p class="m-hero-note m-hero-note-left">
+        hi, since you're new here...
+      </p>
+
+      <p class="m-hero-note m-hero-note-right">
+        let me be your tour guide.
+      </p>
+
+
+      <div class="m-name-stage">
+        <img
+          src="../assets/JENNA.png"
+          alt="Jenna Tonido"
+          class="m-hero-composite"
+          draggable="false"
+        >
+      </div>
+
+
+      <div class="m-hero-this-is" aria-hidden="true">
+        <span>this is</span>
+        <svg class="m-hero-arrow" viewBox="0 0 75 57" fill="none">
+          <path d="M8 3 C11 25 27 40 59 43 M45 31 L60 44 L43 53"
+            stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <span class="m-hero-strategy-chip" aria-hidden="true">
+        visual + strategic
+      </span>
+
+      <img
+        src="../assets/doodles/burst_wine_left.svg"
+        alt=""
+        aria-hidden="true"
+        class="m-hero-doodle doodle-left"
+      >
+
+      <img
+        src="../assets/doodles/sparkle_wine_top.svg"
+        alt=""
+        aria-hidden="true"
+        class="m-hero-doodle doodle-right"
+      >
+
+      <span class="m-hero-extra-spark" aria-hidden="true">✧</span>
+
+      <div class="m-hero-bottom">
+        <div class="m-hero-bottom-roles">
+          <span class="m-hero-bottom-line">Graphic Designer</span>
+          <span class="m-hero-bottom-slash">/</span>
+          <span class="m-hero-bottom-line">Creative</span>
+        </div>
+        <span class="m-hero-credit">By Jenna Tonido</span>
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MEET JENNA
+    ====================================================== -->
+
+    <section class="m-about">
+
+      <div
+        class="m-about-effects"
+        aria-hidden="true"
+      >
+
+        <span class="m-about-orbit orbit-one"></span>
+
+        <span class="m-about-orbit orbit-two"></span>
+
+        <span class="m-about-glow"></span>
+
+        <span class="m-about-line"></span>
+
+      </div>
+
+
+      <div class="m-section-head">
+
+        <h2>
+          meet jenna<span>...</span>
+        </h2>
+
+        <p>
+          before we dive in,<br>
+          here's a little about me
+        </p>
+
+      </div>
+
+
+      <div class="m-about-copy">
+
+        <p class="m-about-intro">
+
+          Hi, I’m <strong>Jenna</strong> — Virtual Assistant by day,
+          digital marketing creative by default.
+
+        </p>
+
+
+        <p>
+
+          I started in customer service, sales, and marketing support...
+          and somewhere along the way realized I actually love turning
+          other people’s messy ideas into something organized and engaging.
+
+        </p>
+
+
+        <p>
+
+          Picked up social media management, content creation, graphic
+          design, short-form video editing, copywriting, SEO, and marketing
+          systems along the way — basically a buffet, and I ate it all.
+
+        </p>
+
+      </div>
+
+
+      <div class="m-meet-image-wrap">
+
+        <img
+          src="../assets/meetjenna.png"
+          alt="Jenna photo collage"
+          class="m-meet-image"
+        >
+
+
+        <div class="m-about-tag">
+          creative + strategic
+        </div>
+
+      </div>
+
+
+      <div class="m-about-bottom-copy">
+
+        <p>
+
+          I gravitate toward the creative and strategic side of digital
+          marketing, but I secretly love the behind-the-scenes chaos too —
+          taking a messy project and making it run smooth.
+
+        </p>
+
+
+        <p>
+
+          I’m always hunting for a new tool or a faster way to do things,
+          because why make it harder than it needs to be?
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MY GOAL
+    ====================================================== -->
+
+    <section class="m-goal">
+
+      <h2>
+        my goal:
+      </h2>
+
+
+      <div
+        class="m-goal-chart"
+        aria-hidden="true"
+      >
+
+        <span class="goal-grid goal-grid-1"></span>
+        <span class="goal-grid goal-grid-2"></span>
+        <span class="goal-grid goal-grid-3"></span>
+
+
+        <svg
+          viewBox="0 0 390 280"
+          preserveAspectRatio="none"
+          class="m-goal-svg"
+        >
+
+          <polyline
+            class="m-goal-growth-line"
+            points="26,230 92,188 158,166 228,112 304,86 360,42"
+          ></polyline>
+
+
+          <path
+            class="m-goal-growth-arrow"
+            d="M344 30 L366 42 L349 60"
+          ></path>
+
+
+          <circle class="goal-point" cx="26" cy="230" r="5"></circle>
+          <circle class="goal-point" cx="92" cy="188" r="5"></circle>
+          <circle class="goal-point" cx="158" cy="166" r="5"></circle>
+          <circle class="goal-point" cx="228" cy="112" r="5"></circle>
+          <circle class="goal-point" cx="304" cy="86" r="5"></circle>
+
+          <circle
+            class="goal-point goal-point-last"
+            cx="360"
+            cy="42"
+            r="6"
+          ></circle>
+
+        </svg>
+
+      </div>
+
+
+      <img
+        src="../assets/doodles/burst_wine_right.svg"
+        alt=""
+        aria-hidden="true"
+        class="m-goal-decor goal-decor-left"
+      >
+
+
+      <img
+        src="../assets/doodles/sparkle_black_top.svg"
+        alt=""
+        aria-hidden="true"
+        class="m-goal-decor goal-decor-right"
+      >
+
+
+      <div class="m-goal-copy">
+
+        <p>
+
+          <strong>Grow</strong> into a well-rounded digital marketing
+          pro, working with people and brands who actually value
+          creativity, organization, and work that isn’t rushed.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         A LITTLE ABOUT ME
+    ====================================================== -->
+
+    <section class="m-little-about">
+
+      <div
+        class="m-little-effects"
+        aria-hidden="true"
+      >
+
+        <span class="m-little-orb little-orb-one"></span>
+
+        <span class="m-little-orb little-orb-two"></span>
+
+        <span class="m-little-dot dot-one"></span>
+
+        <span class="m-little-dot dot-two"></span>
+
+      </div>
+
+
+      <div class="m-little-heading">
+
+        <h2>
+          a little<br>
+          about me:
+        </h2>
+
+        <p>
+          because there’s more to me<br>
+          than a job title
+        </p>
+
+      </div>
+
+
+      <div class="m-little-image-wrap">
+
+        <img
+          src="../assets/aboutjenna.png"
+          alt="Jenna lifestyle collage"
+          class="m-little-image"
+        >
+
+
+        <div class="m-off-duty">
+          off-duty mode
+        </div>
+
+      </div>
+
+
+      <div class="m-personal-list">
+
+        <ul>
+
+          <li>
+            <strong>Cozy games addict</strong> — if there’s a game
+            that lets me relax and get lost in a little virtual world,
+            I’m there.
+          </li>
+
+
+          <li>
+            There’s basically
+            <strong>always music playing</strong>
+            in the background, no matter what I’m doing.
+          </li>
+
+
+          <li>
+            Movies, vlogs, travel, food, and entertainment content —
+            <strong>always queued up.</strong>
+          </li>
+
+
+          <li>
+            <strong>Makeup</strong> is my creative outlet outside
+            of work. Yes, obsessed.
+          </li>
+
+
+          <li>
+            <strong>Dog mom</strong>, and I will talk about my dogs
+            for way longer than you’d expect.
+          </li>
+
+
+          <li>
+            <strong>Naturally curious</strong> — I love learning new
+            tools, especially the ones that actually make my work easier.
+          </li>
+
+
+          <li>
+            Slightly <strong>obsessed with organizing</strong> —
+            a workspace, a content calendar, a Notion page,
+            or just my own thoughts.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WORKS & SKILLS
+    ====================================================== -->
+
+    <section class="m-skills">
+
+      <div class="m-skills-heading">
+
+        <h2>
+          works &amp;<br>
+          skills
+        </h2>
+
+        <p>
+          detailed edition
+        </p>
+
+      </div>
+
+
+      <div class="m-photo-pair">
+
+        <figure class="m-polaroid m-polaroid-left">
+
+          <span class="m-photo-tape"></span>
+
+          <img
+            src="../assets/works-cafe.png"
+            alt="Cafe portrait"
+          >
+
+        </figure>
+
+
+        <figure class="m-polaroid m-polaroid-right">
+
+          <span class="m-photo-tape"></span>
+
+          <img
+            src="../assets/works-theater.png"
+            alt="Theater portrait"
+          >
+
+        </figure>
+
+      </div>
+
+
+      <div class="m-skill-stack">
+
+
+        <article class="m-skill-card">
+
+          <span class="m-card-tape"></span>
+
+          <h3>
+            Social Media &amp; Content
+          </h3>
+
+          <ul>
+            <li>Social Media Management</li>
+            <li>Content Creation</li>
+            <li>Content Planning &amp; Strategy</li>
+            <li>Social Media Strategy</li>
+            <li>Content Calendar Management</li>
+            <li>Short-Form Video Editing</li>
+            <li>Graphic Design</li>
+            <li>Copywriting &amp; Caption Writing</li>
+            <li>Community Management</li>
+            <li>Social Media Scheduling</li>
+            <li>Social Media Analytics &amp; Reporting</li>
+            <li>Hashtag &amp; Keyword Research</li>
+          </ul>
+
+        </article>
+
+
+
+        <article class="m-skill-card skill-right">
+
+          <span class="m-card-tape"></span>
+
+          <h3>
+            Design &amp; Multimedia
+          </h3>
+
+          <ul>
+            <li>Canva Design</li>
+            <li>Reels &amp; TikTok Editing</li>
+            <li>Promotional Graphics</li>
+            <li>Lead Magnet / PDF Design</li>
+            <li>Basic Brand Identity</li>
+            <li>Photo Editing</li>
+          </ul>
+
+        </article>
+
+
+
+        <article class="m-skill-card">
+
+          <span class="m-card-tape"></span>
+
+          <h3>
+            Marketing
+          </h3>
+
+          <ul>
+            <li>Digital Marketing</li>
+            <li>Email Marketing</li>
+            <li>Lead Generation</li>
+            <li>Lead Magnet Creation</li>
+            <li>Funnel Development</li>
+            <li>Marketing Automation</li>
+            <li>Campaign Planning</li>
+            <li>SEO / Search Engine Optimization</li>
+          </ul>
+
+        </article>
+
+
+
+        <article class="m-skill-card skill-right">
+
+          <span class="m-card-tape"></span>
+
+          <h3>
+            System &amp; Tech
+          </h3>
+
+          <ul>
+            <li>Workflow Automation</li>
+            <li>Social Media Automation</li>
+            <li>CRM Management</li>
+            <li>Email Automation</li>
+            <li>Form &amp; Survey Creation</li>
+            <li>Landing Page Setup</li>
+            <li>Basic Web Design</li>
+            <li>Website Content Updates</li>
+            <li>Project &amp; Task Management</li>
+            <li>Data Organization</li>
+          </ul>
+
+        </article>
+
+      </div>
+
+
+      <p class="m-skills-note">
+        creative ideas<br>
+        into real content ♡
+      </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         KIND WORDS
+    ====================================================== -->
+
+    <section
+      class="m-review-section"
+      id="kind-words"
+    >
+
+
+      <div
+        class="m-review-decor"
+        aria-hidden="true"
+      >
+
+        <span class="review-orbit review-orbit-one"></span>
+
+        <span class="review-orbit review-orbit-two"></span>
+
+        <span class="review-glow"></span>
+
+      </div>
+
+
+      <div class="m-review-heading">
+
+        <h2>
+          kind<br>
+          words
+        </h2>
+
+
+        <p>
+          a few words from<br>
+          people i've worked with ♡
+        </p>
+
+      </div>
+
+
+
+      <div class="kind-words-slider">
+
+        <div
+          class="kind-words-wall"
+          id="kindWordsWall"
+        >
+
+          <div
+            class="kind-words-loading"
+            id="kindWordsLoading"
+          >
+            loading kind words...
+          </div>
+
+        </div>
+
+
+        <div
+          class="kind-words-dots"
+          id="kindWordsDots"
+          aria-label="Review navigation"
+        ></div>
+
+      </div>
+
+
+
+      <div
+        class="kind-words-empty"
+        id="kindWordsEmpty"
+        hidden
+      >
+
+        <span>
+          ♡
+        </span>
+
+        <p>
+          no notes here yet.<br>
+          maybe yours will be the first?
+        </p>
+
+      </div>
+
+
+
+      <div class="kind-words-divider">
+
+        <span></span>
+
+        <p>
+          leave yours
+        </p>
+
+        <span></span>
+
+      </div>
+
+
+
+      <div class="m-review-form-heading">
+
+        <p>
+          worked with me before?<br>
+          leave a little note ♡
+        </p>
+
+      </div>
+
+
+
+      <div class="m-review-form-wrap">
+
+        <div class="m-review-paper">
+
+
+          <div class="m-review-paper-top">
+
+            <span class="review-small-label">
+              your experience matters
+            </span>
+
+
+            <span
+              class="review-heart"
+              aria-hidden="true"
+            >
+              ♡
+            </span>
+
+          </div>
+
+
+
+          <form
+            class="m-review-form"
+            id="clientReviewForm"
+            novalidate
+          >
+
+
+            <div class="review-field">
+
+              <label for="reviewName">
+
+                Your Name
+                <span>*</span>
+
+              </label>
+
+
+              <input
+                type="text"
+                id="reviewName"
+                name="name"
+                maxlength="80"
+                placeholder="e.g. Jenna Tonido"
+                autocomplete="name"
+                required
+              >
+
+
+              <small class="review-error"></small>
+
+            </div>
+
+
+
+            <div class="review-field">
+
+              <label for="reviewCompany">
+                Company / Role
+              </label>
+
+
+              <input
+                type="text"
+                id="reviewCompany"
+                name="company"
+                maxlength="100"
+                placeholder="e.g. Founder, Your Company"
+              >
+
+            </div>
+
+
+
+            <div class="review-field">
+
+              <label>
+
+                Rating
+                <span>*</span>
+
+              </label>
+
+
+              <div
+                class="review-stars"
+                id="reviewStars"
+                role="radiogroup"
+                aria-label="Choose a rating"
+              >
+
+                <button type="button" class="review-star" data-rating="1">★</button>
+                <button type="button" class="review-star" data-rating="2">★</button>
+                <button type="button" class="review-star" data-rating="3">★</button>
+                <button type="button" class="review-star" data-rating="4">★</button>
+                <button type="button" class="review-star" data-rating="5">★</button>
+
+              </div>
+
+
+              <input
+                type="hidden"
+                id="reviewRating"
+                value=""
+              >
+
+
+              <small
+                class="review-rating-text"
+                id="reviewRatingText"
+              >
+                tap a star to rate
+              </small>
+
+
+              <small
+                class="review-error"
+                id="ratingError"
+              ></small>
+
+            </div>
+
+
+
+            <div class="review-field">
+
+              <label for="reviewMessage">
+
+                Your Review
+                <span>*</span>
+
+              </label>
+
+
+              <textarea
+                id="reviewMessage"
+                name="review"
+                rows="6"
+                minlength="5"
+                maxlength="500"
+                placeholder="Tell me about your experience working with me..."
+                required
+              ></textarea>
+
+
+              <div class="review-textarea-bottom">
+
+                <small class="review-error"></small>
+
+
+                <small
+                  class="review-count"
+                  id="reviewCount"
+                >
+                  0 / 500
+                </small>
+
+              </div>
+
+            </div>
+
+
+
+            <div
+              class="review-consent-wrap"
+              id="reviewConsentWrap"
+              hidden
+            >
+
+              <label class="review-consent">
+
+                <input
+                  type="checkbox"
+                  id="reviewConsent"
+                >
+
+
+                <span class="review-checkbox"></span>
+
+
+                <span class="review-consent-text">
+
+                  I’m okay with this review being displayed
+                  on Jenna’s portfolio.
+
+                </span>
+
+              </label>
+
+
+              <p class="review-private-note">
+
+                Optional — if you leave this unchecked,
+                Jenna can review it privately first.
+                If it is later shared, your identity will stay anonymous.
+
+              </p>
+
+            </div>
+
+
+
+            <button
+              type="submit"
+              class="review-submit"
+              id="reviewSubmit"
+            >
+
+              <span id="reviewSubmitText">
+                Submit Review
+              </span>
+
+
+              <span class="review-submit-arrow">
+                ↗
+              </span>
+
+            </button>
+
+          </form>
+
+
+
+          <div
+            class="review-success"
+            id="reviewSuccess"
+            hidden
+          >
+
+            <span class="review-success-heart">
+              ♡
+            </span>
+
+
+            <h3>
+              thank you!
+            </h3>
+
+
+            <p id="reviewSuccessMessage">
+              your kind words have been submitted.
+            </p>
+
+
+            <button
+              type="button"
+              id="leaveAnotherReview"
+            >
+              leave another review
+            </button>
+
+          </div>
+
+
+
+          <div
+            class="review-submit-error"
+            id="reviewSubmitError"
+            hidden
+          >
+            Something went wrong. Please try again.
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+  ></script>
+
+
+
+  <script>
+
+    const SUPABASE_URL = "https://skeqmfdolslqoxodtdwj.supabase.co";
+
+
+    const SUPABASE_ANON_KEY = "sb_publishable__O7tc353Pa8yAx3A9CET0Q_iPvUmKhw";
+
+
+    const supabaseClient =
+      window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_ANON_KEY
+      );
+
+
+
+    /* BURGER */
+
+    const burger =
+      document.querySelector(
+        ".m-burger"
+      );
+
+
+    const menuOverlay =
+      document.querySelector(
+        ".m-menu-overlay"
+      );
+
+
+    const menuLinks =
+      document.querySelectorAll(
+        ".m-menu-link"
+      );
+
+
+
+    function openMobileMenu() {
+
+      burger.classList.add(
+        "is-open"
+      );
+
+
+      menuOverlay.classList.add(
+        "is-open"
+      );
+
+
+      burger.setAttribute(
+        "aria-expanded",
+        "true"
+      );
+
+
+      menuOverlay.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+
+      document.body.classList.add(
+        "menu-open"
+      );
+
+    }
+
+
+
+    function closeMobileMenu() {
+
+      burger.classList.remove(
+        "is-open"
+      );
+
+
+      menuOverlay.classList.remove(
+        "is-open"
+      );
+
+
+      burger.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+
+      menuOverlay.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+
+      document.body.classList.remove(
+        "menu-open"
+      );
+
+    }
+
+
+
+    burger.addEventListener(
+      "click",
+      () => {
+
+        burger.classList.contains(
+          "is-open"
+        )
+          ? closeMobileMenu()
+          : openMobileMenu();
+
+      }
+    );
+
+
+    menuLinks.forEach(
+      link => {
+
+        link.addEventListener(
+          "click",
+          closeMobileMenu
+        );
+
+      }
+    );
+
+
+    menuOverlay.addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target === menuOverlay
+        ) {
+
+          closeMobileMenu();
+
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          closeMobileMenu();
+
+        }
+
+      }
+    );
+
+
+
+    /* ======================================================
+       REVIEWS
+    ====================================================== */
+
+    const reviewForm =
+      document.getElementById(
+        "clientReviewForm"
+      );
+
+
+    const reviewName =
+      document.getElementById(
+        "reviewName"
+      );
+
+
+    const reviewCompany =
+      document.getElementById(
+        "reviewCompany"
+      );
+
+
+    const reviewStars =
+      document.querySelectorAll(
+        ".review-star"
+      );
+
+
+    const reviewRating =
+      document.getElementById(
+        "reviewRating"
+      );
+
+
+    const reviewRatingText =
+      document.getElementById(
+        "reviewRatingText"
+      );
+
+
+    const ratingError =
+      document.getElementById(
+        "ratingError"
+      );
+
+
+    const reviewMessage =
+      document.getElementById(
+        "reviewMessage"
+      );
+
+
+    const reviewCount =
+      document.getElementById(
+        "reviewCount"
+      );
+
+
+    const reviewConsentWrap =
+      document.getElementById(
+        "reviewConsentWrap"
+      );
+
+
+    const reviewConsent =
+      document.getElementById(
+        "reviewConsent"
+      );
+
+
+    const reviewSuccess =
+      document.getElementById(
+        "reviewSuccess"
+      );
+
+
+    const reviewSuccessMessage =
+      document.getElementById(
+        "reviewSuccessMessage"
+      );
+
+
+    const leaveAnotherReview =
+      document.getElementById(
+        "leaveAnotherReview"
+      );
+
+
+    const kindWordsWall =
+      document.getElementById(
+        "kindWordsWall"
+      );
+
+
+    const kindWordsLoading =
+      document.getElementById(
+        "kindWordsLoading"
+      );
+
+
+    const kindWordsEmpty =
+      document.getElementById(
+        "kindWordsEmpty"
+      );
+
+
+    const kindWordsDots =
+      document.getElementById(
+        "kindWordsDots"
+      );
+
+
+    const reviewSubmit =
+      document.getElementById(
+        "reviewSubmit"
+      );
+
+
+    const reviewSubmitText =
+      document.getElementById(
+        "reviewSubmitText"
+      );
+
+
+    const reviewSubmitError =
+      document.getElementById(
+        "reviewSubmitError"
+      );
+
+
+    let selectedRating = 0;
+
+
+
+    const ratingLabels = {
+
+      1: "1 star — could be better",
+
+      2: "2 stars — okay",
+
+      3: "3 stars — good",
+
+      4: "4 stars — great",
+
+      5: "5 stars — loved it ♡"
+
+    };
+
+
+
+    function updateStars(value) {
+
+      reviewStars.forEach(
+        star => {
+
+          const starValue =
+            Number(
+              star.dataset.rating
+            );
+
+
+          star.classList.toggle(
+            "active",
+            starValue <= value
+          );
+
+        }
+      );
+
+    }
+
+
+
+    reviewStars.forEach(
+      star => {
+
+
+        star.addEventListener(
+          "click",
+          () => {
+
+            selectedRating =
+              Number(
+                star.dataset.rating
+              );
+
+
+            reviewRating.value =
+              selectedRating;
+
+
+            updateStars(
+              selectedRating
+            );
+
+
+            reviewRatingText.textContent =
+              ratingLabels[
+                selectedRating
+              ];
+
+
+            ratingError.textContent =
+              "";
+
+
+            checkReviewCompletion();
+
+          }
+        );
+
+
+        star.addEventListener(
+          "mouseenter",
+          () => {
+
+            const previewValue =
+              Number(
+                star.dataset.rating
+              );
+
+
+            reviewStars.forEach(
+              item => {
+
+                item.classList.toggle(
+                  "preview",
+                  Number(
+                    item.dataset.rating
+                  )
+                  <=
+                  previewValue
+                );
+
+              }
+            );
+
+          }
+        );
+
+
+        star.addEventListener(
+          "mouseleave",
+          () => {
+
+            reviewStars.forEach(
+              item => {
+
+                item.classList.remove(
+                  "preview"
+                );
+
+              }
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+
+    function checkReviewCompletion() {
+
+      const complete =
+        reviewName.value.trim().length > 0
+        &&
+        selectedRating > 0
+        &&
+        reviewMessage.value.trim().length >= 5;
+
+
+      if (
+        complete
+      ) {
+
+        reviewConsentWrap.hidden =
+          false;
+
+
+        requestAnimationFrame(
+          () => {
+
+            reviewConsentWrap.classList.add(
+              "is-visible"
+            );
+
+          }
+        );
+
+      } else {
+
+        reviewConsentWrap.classList.remove(
+          "is-visible"
+        );
+
+
+        reviewConsent.checked =
+          false;
+
+
+        setTimeout(
+          () => {
+
+            if (
+              !reviewConsentWrap
+                .classList
+                .contains(
+                  "is-visible"
+                )
+            ) {
+
+              reviewConsentWrap.hidden =
+                true;
+
+            }
+
+          },
+          250
+        );
+
+      }
+
+    }
+
+
+
+    reviewName.addEventListener(
+      "input",
+      checkReviewCompletion
+    );
+
+
+    reviewMessage.addEventListener(
+      "input",
+      () => {
+
+        reviewCount.textContent =
+          `${reviewMessage.value.length} / 500`;
+
+
+        checkReviewCompletion();
+
+      }
+    );
+
+
+
+    function createReviewCard(review) {
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+
+      card.className =
+        "kind-word-card";
+
+
+      const quote =
+        document.createElement(
+          "span"
+        );
+
+
+      quote.className =
+        "kind-word-quote";
+
+
+      quote.textContent =
+        "“";
+
+
+      const stars =
+        document.createElement(
+          "div"
+        );
+
+
+      stars.className =
+        "kind-word-stars";
+
+
+      stars.textContent =
+        "★".repeat(
+          Number(
+            review.rating
+          )
+        );
+
+
+      const message =
+        document.createElement(
+          "p"
+        );
+
+
+      message.className =
+        "kind-word-message";
+
+
+      message.textContent =
+        review.review;
+
+
+      const person =
+        document.createElement(
+          "div"
+        );
+
+
+      person.className =
+        "kind-word-person";
+
+
+      const name =
+        document.createElement(
+          "strong"
+        );
+
+
+      name.textContent =
+        review.anonymous
+          ? "Anonymous"
+          : review.name;
+
+
+      person.appendChild(
+        name
+      );
+
+
+      if (
+        !review.anonymous
+        &&
+        review.company
+        &&
+        review.company.trim() !== ""
+      ) {
+
+        const company =
+          document.createElement(
+            "span"
+          );
+
+
+        company.textContent =
+          review.company;
+
+
+        person.appendChild(
+          company
+        );
+
+      }
+
+
+      card.appendChild(
+        quote
+      );
+
+
+      card.appendChild(
+        stars
+      );
+
+
+      card.appendChild(
+        message
+      );
+
+
+      card.appendChild(
+        person
+      );
+
+
+      return card;
+
+    }
+
+
+
+    /* ======================================================
+       AUTO SLIDER
+    ====================================================== */
+
+    let kindWordsCurrentIndex =
+      0;
+
+
+    let kindWordsAutoTimer =
+      null;
+
+
+    let kindWordsResumeTimer =
+      null;
+
+
+    let kindWordsScrollTimer =
+      null;
+
+
+    let sliderIsProgrammatic =
+      false;
+
+
+    const KIND_WORDS_DELAY =
+      3800;
+
+
+    const KIND_WORDS_RESUME_DELAY =
+      5500;
+
+
+
+    function getReviewCards() {
+
+      return Array.from(
+        kindWordsWall.querySelectorAll(
+          ".kind-word-card"
+        )
+      );
+
+    }
+
+
+
+    function updateKindWordsSlider() {
+
+      const cards =
+        getReviewCards();
+
+
+      const dots =
+        kindWordsDots.querySelectorAll(
+          ".kind-words-dot"
+        );
+
+
+      cards.forEach(
+        (card, index) => {
+
+          card.classList.toggle(
+            "is-active",
+            index === kindWordsCurrentIndex
+          );
+
+        }
+      );
+
+
+      dots.forEach(
+        (dot, index) => {
+
+          dot.classList.toggle(
+            "is-active",
+            index === kindWordsCurrentIndex
+          );
+
+
+          dot.setAttribute(
+            "aria-current",
+            index === kindWordsCurrentIndex
+              ? "true"
+              : "false"
+          );
+
+        }
+      );
+
+    }
+
+
+
+    function createKindWordsDots() {
+
+      const cards =
+        getReviewCards();
+
+
+      kindWordsDots.innerHTML =
+        "";
+
+
+      cards.forEach(
+        (_, index) => {
+
+          const dot =
+            document.createElement(
+              "button"
+            );
+
+
+          dot.type =
+            "button";
+
+
+          dot.className =
+            "kind-words-dot";
+
+
+          dot.setAttribute(
+            "aria-label",
+            `Go to review ${index + 1}`
+          );
+
+
+          dot.addEventListener(
+            "click",
+            () => {
+
+              goToReview(
+                index,
+                true
+              );
+
+            }
+          );
+
+
+          kindWordsDots.appendChild(
+            dot
+          );
+
+        }
+      );
+
+
+      kindWordsDots.hidden =
+        cards.length <= 1;
+
+
+      updateKindWordsSlider();
+
+    }
+
+
+
+    function scrollCardIntoCenter(card) {
+
+      const targetLeft =
+        card.offsetLeft
+        -
+        (
+          kindWordsWall.clientWidth
+          -
+          card.clientWidth
+        ) / 2;
+
+
+      sliderIsProgrammatic =
+        true;
+
+
+      kindWordsWall.scrollTo({
+
+        left:
+          targetLeft,
+
+        behavior:
+          "smooth"
+
+      });
+
+
+      setTimeout(
+        () => {
+
+          sliderIsProgrammatic =
+            false;
+
+        },
+        700
+      );
+
+    }
+
+
+
+    function goToReview(
+      index,
+      userAction = false
+    ) {
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length === 0
+      ) {
+
+        return;
+
+      }
+
+
+      if (
+        index < 0
+      ) {
+
+        index =
+          cards.length - 1;
+
+      }
+
+
+      if (
+        index >= cards.length
+      ) {
+
+        index =
+          0;
+
+      }
+
+
+      kindWordsCurrentIndex =
+        index;
+
+
+      scrollCardIntoCenter(
+        cards[index]
+      );
+
+
+      updateKindWordsSlider();
+
+
+      if (
+        userAction
+      ) {
+
+        pauseKindWordsAutoplay();
+
+      }
+
+    }
+
+
+
+    function stopKindWordsAutoplay() {
+
+      clearInterval(
+        kindWordsAutoTimer
+      );
+
+
+      kindWordsAutoTimer =
+        null;
+
+    }
+
+
+
+    function startKindWordsAutoplay() {
+
+      stopKindWordsAutoplay();
+
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length <= 1
+      ) {
+
+        return;
+
+      }
+
+
+      kindWordsAutoTimer =
+        setInterval(
+          () => {
+
+            goToReview(
+              kindWordsCurrentIndex + 1
+            );
+
+          },
+          KIND_WORDS_DELAY
+        );
+
+    }
+
+
+
+    function pauseKindWordsAutoplay() {
+
+      stopKindWordsAutoplay();
+
+
+      clearTimeout(
+        kindWordsResumeTimer
+      );
+
+
+      kindWordsWall.classList.add(
+        "is-paused"
+      );
+
+
+      kindWordsResumeTimer =
+        setTimeout(
+          () => {
+
+            kindWordsWall.classList.remove(
+              "is-paused"
+            );
+
+
+            startKindWordsAutoplay();
+
+          },
+          KIND_WORDS_RESUME_DELAY
+        );
+
+    }
+
+
+
+    function detectCenteredReview() {
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length === 0
+      ) {
+
+        return;
+
+      }
+
+
+      const wallRect =
+        kindWordsWall.getBoundingClientRect();
+
+
+      const wallCenter =
+        wallRect.left
+        +
+        wallRect.width / 2;
+
+
+      let closestIndex =
+        0;
+
+
+      let closestDistance =
+        Infinity;
+
+
+      cards.forEach(
+        (card, index) => {
+
+          const cardRect =
+            card.getBoundingClientRect();
+
+
+          const cardCenter =
+            cardRect.left
+            +
+            cardRect.width / 2;
+
+
+          const distance =
+            Math.abs(
+              wallCenter
+              -
+              cardCenter
+            );
+
+
+          if (
+            distance < closestDistance
+          ) {
+
+            closestDistance =
+              distance;
+
+
+            closestIndex =
+              index;
+
+          }
+
+        }
+      );
+
+
+      kindWordsCurrentIndex =
+        closestIndex;
+
+
+      updateKindWordsSlider();
+
+    }
+
+
+
+    kindWordsWall.addEventListener(
+      "scroll",
+      () => {
+
+        clearTimeout(
+          kindWordsScrollTimer
+        );
+
+
+        kindWordsScrollTimer =
+          setTimeout(
+            detectCenteredReview,
+            80
+          );
+
+      },
+      {
+        passive: true
+      }
+    );
+
+
+
+    kindWordsWall.addEventListener(
+      "touchstart",
+      () => {
+
+        if (
+          !sliderIsProgrammatic
+        ) {
+
+          pauseKindWordsAutoplay();
+
+        }
+
+      },
+      {
+        passive: true
+      }
+    );
+
+
+
+    kindWordsWall.addEventListener(
+      "pointerdown",
+      () => {
+
+        if (
+          !sliderIsProgrammatic
+        ) {
+
+          pauseKindWordsAutoplay();
+
+        }
+
+      }
+    );
+
+
+
+    function initializeKindWordsSlider(
+      startIndex = 0
+    ) {
+
+      const cards =
+        getReviewCards();
+
+
+      if (
+        cards.length === 0
+      ) {
+
+        kindWordsDots.hidden =
+          true;
+
+
+        return;
+
+      }
+
+
+      kindWordsCurrentIndex =
+        Math.min(
+          startIndex,
+          cards.length - 1
+        );
+
+
+      createKindWordsDots();
+
+
+      requestAnimationFrame(
+        () => {
+
+          goToReview(
+            kindWordsCurrentIndex
+          );
+
+
+          startKindWordsAutoplay();
+
+        }
+      );
+
+    }
+
+
+
+    /* ======================================================
+       LOAD REVIEWS
+    ====================================================== */
+
+    async function loadReviews() {
+
+      stopKindWordsAutoplay();
+
+
+      kindWordsLoading.hidden =
+        false;
+
+
+      kindWordsEmpty.hidden =
+        true;
+
+
+      kindWordsDots.hidden =
+        true;
+
+
+
+      const {
+        data,
+        error
+      } =
+        await supabaseClient
+
+          .from(
+            "reviews"
+          )
+
+          .select(
+            "id,name,company,rating,review,display_permission,approved,anonymous,created_at"
+          )
+
+          .eq("approved", true)
+          .eq("display_permission", true)
+
+          .order(
+            "created_at",
+            {
+              ascending:
+                false
+            }
+          );
+
+
+
+      kindWordsLoading.hidden =
+        true;
+
+
+
+      if (
+        error
+      ) {
+
+        console.error(
+          "Review load error:",
+          error
+        );
+
+
+        kindWordsEmpty.hidden =
+          false;
+
+
+        return;
+
+      }
+
+
+
+      kindWordsWall
+        .querySelectorAll(
+          ".kind-word-card"
+        )
+        .forEach(
+          card => {
+
+            card.remove();
+
+          }
+        );
+
+
+
+      if (
+        !data
+        ||
+        data.length === 0
+      ) {
+
+        kindWordsEmpty.hidden =
+          false;
+
+
+        kindWordsDots.hidden =
+          true;
+
+
+        return;
+
+      }
+
+
+
+      kindWordsEmpty.hidden =
+        true;
+
+
+
+      data.forEach(
+        review => {
+
+          kindWordsWall.appendChild(
+            createReviewCard(
+              review
+            )
+          );
+
+        }
+      );
+
+
+
+      initializeKindWordsSlider(
+        0
+      );
+
+    }
+
+
+
+    /* ======================================================
+       SUBMIT
+    ====================================================== */
+
+    reviewForm.addEventListener(
+      "submit",
+      async event => {
+
+        event.preventDefault();
+
+
+        let valid =
+          true;
+
+
+        reviewSubmitError.hidden =
+          true;
+
+
+        reviewForm
+          .querySelectorAll(
+            ".review-error"
+          )
+          .forEach(
+            error => {
+
+              error.textContent =
+                "";
+
+            }
+          );
+
+
+
+        if (
+          !reviewName.value.trim()
+        ) {
+
+          reviewName
+            .closest(
+              ".review-field"
+            )
+            .querySelector(
+              ".review-error"
+            )
+            .textContent =
+              "please enter your name.";
+
+
+          valid =
+            false;
+
+        }
+
+
+
+        if (
+          !selectedRating
+        ) {
+
+          ratingError.textContent =
+            "please choose a rating.";
+
+
+          valid =
+            false;
+
+        }
+
+
+
+        if (
+          reviewMessage
+            .value
+            .trim()
+            .length < 5
+        ) {
+
+          reviewMessage
+            .closest(
+              ".review-field"
+            )
+            .querySelector(
+              ".review-error"
+            )
+            .textContent =
+              "please write a short review.";
+
+
+          valid =
+            false;
+
+        }
+
+
+
+        if (
+          !valid
+        ) {
+
+          return;
+
+        }
+
+
+
+        const publicPermission =
+          reviewConsent.checked;
+
+
+
+        const newReview = {
+
+          name:
+            reviewName.value.trim(),
+
+          company:
+            reviewCompany.value.trim()
+            ||
+            null,
+
+          rating:
+            selectedRating,
+
+          review:
+            reviewMessage.value.trim(),
+
+          display_permission:
+            publicPermission
+
+        };
+
+
+
+        reviewSubmit.disabled =
+          true;
+
+
+        reviewSubmitText.textContent =
+          "Submitting...";
+
+
+
+        const {
+          error
+        } =
+          await supabaseClient
+
+            .from(
+              "reviews"
+            )
+
+            .insert(
+              [
+                newReview
+              ]
+            );
+
+
+
+        reviewSubmit.disabled =
+          false;
+
+
+        reviewSubmitText.textContent =
+          "Submit Review";
+
+
+
+        if (
+          error
+        ) {
+
+          console.error(
+            "Review submission error:",
+            error
+          );
+
+
+          reviewSubmitError.hidden =
+            false;
+
+
+          return;
+
+        }
+
+
+
+        reviewSuccessMessage.textContent = publicPermission
+          ? "thank you! your review was submitted and is awaiting approval ♡"
+          : "thank you! your private review was submitted. it won't be publicly displayed ♡";
+
+
+
+        reviewForm.hidden =
+          true;
+
+
+        reviewSuccess.hidden =
+          false;
+
+
+        reviewSuccess.scrollIntoView({
+
+          behavior:
+            "smooth",
+
+          block:
+            "center"
+
+        });
+
+      }
+    );
+
+
+
+    leaveAnotherReview.addEventListener(
+      "click",
+      () => {
+
+        reviewForm.reset();
+
+
+        selectedRating =
+          0;
+
+
+        reviewRating.value =
+          "";
+
+
+        updateStars(
+          0
+        );
+
+
+        reviewRatingText.textContent =
+          "tap a star to rate";
+
+
+        reviewCount.textContent =
+          "0 / 500";
+
+
+        ratingError.textContent =
+          "";
+
+
+        reviewSubmitError.hidden =
+          true;
+
+
+        reviewConsentWrap.classList.remove(
+          "is-visible"
+        );
+
+
+        reviewConsentWrap.hidden =
+          true;
+
+
+        reviewSuccess.hidden =
+          true;
+
+
+        reviewForm.hidden =
+          false;
+
+      }
+    );
+
+
+
+    document.addEventListener(
+      "visibilitychange",
+      () => {
+
+        if (
+          document.hidden
+        ) {
+
+          stopKindWordsAutoplay();
+
+        } else {
+
+          startKindWordsAutoplay();
+
+        }
+
+      }
+    );
+
+
+
+    loadReviews();
+
+  </script>
+
+
+</body>
+</html>
