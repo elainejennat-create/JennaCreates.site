@@ -44,3 +44,94 @@
   .footer-spark { width: 20px; height: 20px; }
   .footer p { display: none; }
 }
+
+
+/* ==========================================
+   CONTACT PAGE — DESKTOP FINAL ADJUSTMENTS
+========================================== */
+
+@media (min-width: 781px) {
+
+  /* LOGO — Zoom inside circular container */
+
+  .brand-circle {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+
+  .brand-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.28);
+    transform-origin: center;
+    display: block;
+  }
+
+
+  /* SOCIAL LINKS — Label and arrow */
+
+  .socials {
+    position: relative;
+    margin: 38px 0 0 26px;
+  }
+
+  .social-intro {
+    position: relative;
+    display: block;
+    width: max-content;
+    margin-bottom: 28px;
+  }
+
+  .social-note {
+    position: relative;
+    display: block;
+    margin: 0;
+    transform: rotate(-5deg);
+  }
+
+  /* Curved arrow to the left of the buttons */
+
+  .social-arrow {
+    position: absolute;
+    top: 23px;
+    left: 36px;
+    width: 65px;
+    height: 60px;
+    transform: translateX(-18px) rotate(4deg);
+    fill: none;
+    stroke: #490F16;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+
+  /* Space for the arrow before the buttons */
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 105px;
+    flex-wrap: wrap;
+  }
+
+  .social-links > a {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .social-caption {
+    margin-left: 5px;
+    white-space: nowrap;
+  }
+
+}
