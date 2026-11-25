@@ -11,10 +11,80 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/Contact/contact.css" />
+  
+<style>
+  /* Mobile Contact viewer */
+  #contact-mobile-frame {
+    display: none;
+  }
+
+  @media (max-width: 780px) {
+    html,
+    body {
+      margin: 0 !important;
+      width: 100%;
+      height: 100%;
+      overflow: hidden !important;
+    }
+
+    body > :not(#contact-mobile-frame) {
+      display: none !important;
+    }
+
+    #contact-mobile-frame {
+      display: block !important;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      border: 0;
+      background: #f6e9d6;
+    }
+  }
+</style>
+
   <script src="/Contact/contact.js" defer></script>
 </head>
 <body>
+ 
+<body>
+
+  <!-- Mobile page: same visible /Contact/ URL -->
+  <iframe
+    id="contact-mobile-frame"
+    title="Jenna Creates Mobile Contact Page"
+    data-src="/Contact/mobile.html"
+  ></iframe>
+
+  <script>
+    (() => {
+      const frame = document.getElementById(
+        "contact-mobile-frame"
+      );
+
+      const mobileScreen = window.matchMedia(
+        "(max-width: 780px)"
+      );
+
+      function loadMobile() {
+        if (mobileScreen.matches && !frame.src) {
+          frame.src = frame.dataset.src;
+        }
+      }
+
+      loadMobile();
+
+      mobileScreen.addEventListener(
+        "change",
+        loadMobile
+      );
+    })();
+  </script>
+
   <div class="page-grain" aria-hidden="true"></div>
+
 
   <header class="site-nav" id="top">
     <a class="brand-circle" href="/" aria-label="Jenna Creates — Home">
