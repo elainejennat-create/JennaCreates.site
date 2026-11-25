@@ -3463,3 +3463,211 @@ section::after {
 .m-name-stage {
   transform: translateY(-40px);
 }
+
+
+/* ==========================================
+   HOME — CONTACT CTA SECTION
+========================================== */
+
+.home-contact-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 590px;
+  padding: 95px 25px;
+
+  background: #f6e9d6;
+  color: #490f16;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-contact-cta-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+}
+
+.home-contact-cta-label {
+  margin: 0 0 28px;
+
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  color: #490f16;
+}
+
+/* Main heading */
+
+.home-contact-cta-title {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(54px, 7vw, 100px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.065em;
+  color: #490f16;
+}
+
+/* Handwritten text */
+
+.home-contact-cta-script {
+  margin: 20px 0 0;
+
+  font-family: "Karumbi", cursive;
+  font-size: clamp(36px, 4.5vw, 60px);
+  line-height: 1.2;
+  color: #8d3045;
+
+  transform: rotate(-4deg);
+}
+
+/* Description */
+
+.home-contact-cta-description {
+  max-width: 480px;
+  margin: 30px auto;
+
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #75414b;
+}
+
+/* Get in Touch button */
+
+.home-contact-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  min-width: 220px;
+  padding: 17px 38px;
+
+  border-radius: 100px;
+  background: #490f16;
+  color: #fff5eb;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-shadow: 0 12px 26px rgba(73, 15, 22, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.home-contact-cta-button:hover {
+  transform: translateY(-4px);
+  background: #751b2b;
+  box-shadow: 0 16px 30px rgba(73, 15, 22, 0.2);
+}
+
+.home-contact-cta-button svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.home-contact-cta-button:focus-visible {
+  outline: 3px solid #bd798a;
+  outline-offset: 4px;
+}
+
+/* Bottom note */
+
+.home-contact-cta-note {
+  margin: 25px 0 0;
+
+  font-family: "Karumbi", cursive;
+  font-size: 29px;
+  color: #9a5364;
+
+  transform: rotate(-4deg);
+}
+
+/* Decorative sparkle */
+
+.home-contact-cta-sparkle {
+  position: absolute;
+  top: 23%;
+  right: 17%;
+
+  width: 38px;
+  height: 38px;
+
+  stroke: #ad6577;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+
+  pointer-events: none;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 780px) {
+
+  .home-contact-cta {
+    min-height: 510px;
+    padding: 85px 22px;
+  }
+
+  .home-contact-cta-label {
+    margin-bottom: 26px;
+    font-size: 10px;
+  }
+
+  .home-contact-cta-title {
+    font-size: clamp(40px, 10.5vw, 60px);
+    line-height: 1.08;
+  }
+
+  .home-contact-cta-script {
+    margin-top: 22px;
+    font-size: clamp(32px, 8.5vw, 44px);
+  }
+
+  .home-contact-cta-description {
+    max-width: 330px;
+    margin: 28px auto;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .home-contact-cta-button {
+    min-width: 215px;
+    padding: 16px 34px;
+    font-size: 15px;
+  }
+
+  .home-contact-cta-note {
+    margin-top: 28px;
+    font-size: 26px;
+  }
+
+  .home-contact-cta-sparkle {
+    top: 16%;
+    right: 8%;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-contact-cta-button {
+    transition: none;
+  }
+}
