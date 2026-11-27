@@ -3687,3 +3687,38 @@ section::after {
   height: 20px;
   flex-shrink: 0;
 }
+
+
+/* MOBILE — FIX SUBMIT REVIEW BUTTON */
+
+.review-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 20px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.review-submit-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.review-submit-arrow svg {
+  display: block;
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  flex: 0 0 18px;
+}
