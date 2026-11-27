@@ -3671,3 +3671,19 @@ section::after {
     transition: none;
   }
 }
+
+
+/* REVIEW SUBMIT SVG ARROW */
+
+.review-submit-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-submit-arrow svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
