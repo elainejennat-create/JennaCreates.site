@@ -5328,3 +5328,37 @@ body.desktop-menu-open {
   flex-shrink: 0;
 }
 
+
+/* FIX — REVIEW SUBMIT BUTTON & ARROW */
+
+.review-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 22px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.review-submit-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
+.review-submit-arrow svg {
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  flex: 0 0 20px;
+}
