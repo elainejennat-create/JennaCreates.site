@@ -762,3 +762,43 @@ button {
     stroke-dashoffset: 0;
   }
 }
+
+
+/* ==========================================
+   MOBILE BURGER — CONTACT LINK
+========================================== */
+
+.m-menu-link[href="/Contact/"] {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.m-menu-link[href="/Contact/"] small {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.m-menu-link[href="/Contact/"] strong {
+  flex: 1;
+  font-weight: 700;
+}
+
+.m-menu-link[href="/Contact/"] .m-menu-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+}
+
+.m-menu-link[href="/Contact/"] .m-menu-arrow svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
